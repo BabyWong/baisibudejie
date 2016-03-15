@@ -10,10 +10,11 @@
 		F5C567301C97DF5300D76F32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5672F1C97DF5300D76F32 /* main.m */; };
 		F5C567331C97DF5300D76F32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C567321C97DF5300D76F32 /* AppDelegate.m */; };
 		F5C5673B1C97DF5300D76F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C5673A1C97DF5300D76F32 /* Assets.xcassets */; };
-		F5C5673E1C97DF5300D76F32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C5673C1C97DF5300D76F32 /* LaunchScreen.storyboard */; };
 		F5C567491C97DF5300D76F32 /* baisibudejieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C567481C97DF5300D76F32 /* baisibudejieTests.m */; };
 		F5C567541C97DF5300D76F32 /* baisibudejieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C567531C97DF5300D76F32 /* baisibudejieUITests.m */; };
 		F5C567631C97E03900D76F32 /* WMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C567621C97E03900D76F32 /* WMTabBarController.m */; };
+		F5C567671C97EA3100D76F32 /* WMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C567661C97EA3100D76F32 /* WMTabBar.m */; };
+		F5C5676A1C97EB1C00D76F32 /* UIView+WMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C567691C97EB1C00D76F32 /* UIView+WMExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		F5C567311C97DF5300D76F32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5C567321C97DF5300D76F32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F5C5673A1C97DF5300D76F32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F5C5673D1C97DF5300D76F32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5C5673F1C97DF5300D76F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5C567441C97DF5300D76F32 /* baisibudejieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baisibudejieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C567481C97DF5300D76F32 /* baisibudejieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = baisibudejieTests.m; sourceTree = "<group>"; };
@@ -49,6 +49,11 @@
 		F5C567551C97DF5300D76F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5C567611C97E03900D76F32 /* WMTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTabBarController.h; sourceTree = "<group>"; };
 		F5C567621C97E03900D76F32 /* WMTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTabBarController.m; sourceTree = "<group>"; };
+		F5C567641C97E9C700D76F32 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F5C567651C97EA3100D76F32 /* WMTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTabBar.h; sourceTree = "<group>"; };
+		F5C567661C97EA3100D76F32 /* WMTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTabBar.m; sourceTree = "<group>"; };
+		F5C567681C97EB1C00D76F32 /* UIView+WMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WMExtension.h"; sourceTree = "<group>"; };
+		F5C567691C97EB1C00D76F32 /* UIView+WMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WMExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +107,15 @@
 				F5C567311C97DF5300D76F32 /* AppDelegate.h */,
 				F5C567321C97DF5300D76F32 /* AppDelegate.m */,
 				F5C5673A1C97DF5300D76F32 /* Assets.xcassets */,
-				F5C5673C1C97DF5300D76F32 /* LaunchScreen.storyboard */,
 				F5C5673F1C97DF5300D76F32 /* Info.plist */,
 				F5C5672E1C97DF5300D76F32 /* Supporting Files */,
 				F5C567611C97E03900D76F32 /* WMTabBarController.h */,
 				F5C567621C97E03900D76F32 /* WMTabBarController.m */,
+				F5C567641C97E9C700D76F32 /* PrefixHeader.pch */,
+				F5C567651C97EA3100D76F32 /* WMTabBar.h */,
+				F5C567661C97EA3100D76F32 /* WMTabBar.m */,
+				F5C567681C97EB1C00D76F32 /* UIView+WMExtension.h */,
+				F5C567691C97EB1C00D76F32 /* UIView+WMExtension.m */,
 			);
 			path = baisibudejie;
 			sourceTree = "<group>";
@@ -244,7 +253,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5C5673E1C97DF5300D76F32 /* LaunchScreen.storyboard in Resources */,
 				F5C5673B1C97DF5300D76F32 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +279,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5C567331C97DF5300D76F32 /* AppDelegate.m in Sources */,
+				F5C5676A1C97EB1C00D76F32 /* UIView+WMExtension.m in Sources */,
+				F5C567671C97EA3100D76F32 /* WMTabBar.m in Sources */,
 				F5C567631C97E03900D76F32 /* WMTabBarController.m in Sources */,
 				F5C567301C97DF5300D76F32 /* main.m in Sources */,
 			);
@@ -306,17 +316,6 @@
 			targetProxy = F5C567501C97DF5300D76F32 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F5C5673C1C97DF5300D76F32 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5C5673D1C97DF5300D76F32 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F5C567561C97DF5300D76F32 /* Debug */ = {
@@ -404,6 +403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = baisibudejie/PrefixHeader.pch;
 				INFOPLIST_FILE = baisibudejie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -417,6 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = baisibudejie/PrefixHeader.pch;
 				INFOPLIST_FILE = baisibudejie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -492,6 +493,7 @@
 				F5C5675A1C97DF5300D76F32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5C5675B1C97DF5300D76F32 /* Build configuration list for PBXNativeTarget "baisibudejieTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +502,7 @@
 				F5C5675D1C97DF5300D76F32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5C5675E1C97DF5300D76F32 /* Build configuration list for PBXNativeTarget "baisibudejieUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +511,7 @@
 				F5C567601C97DF5300D76F32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

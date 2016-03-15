@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  baisibudejie
+//
+//  Created by hwm on 16/3/15.
+//  Copyright © 2016年 hwm. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/**
+ *  obj-c
+ */
+
+#ifdef __OBJC__
+
+#import "UIView+WMExtension.h"
+
+/**
+ *  输出日志
+ */
+#ifdef DEBUG
+#define  WMLog(...) NSLog(__VA_ARGS__)
+#else
+#define  WMLog(...)
+#endif
+
+/*** 颜色 ***/
+#define WMColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define WMColor(r, g, b) WMColorA((r), (g), (b), 255)
+#define WMRandomColor WMColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+
+#endif
+
+
+
+
+#endif /* PrefixHeader_pch */
