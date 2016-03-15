@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F5C567301C97DF5300D76F32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C5672F1C97DF5300D76F32 /* main.m */; };
-		F5C567331C97DF5300D76F32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C567321C97DF5300D76F32 /* AppDelegate.m */; };
+		F5847FFB1C980728005D191F /* UIView+WMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F5847FF01C980728005D191F /* UIView+WMExtension.m */; };
+		F5847FFC1C980728005D191F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5847FF31C980728005D191F /* AppDelegate.m */; };
+		F5847FFD1C980728005D191F /* WMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5847FF51C980728005D191F /* WMTabBarController.m */; };
+		F5847FFE1C980728005D191F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5847FF61C980728005D191F /* main.m */; };
+		F5847FFF1C980728005D191F /* WMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5847FFA1C980728005D191F /* WMTabBar.m */; };
+		F58480021C980755005D191F /* WMEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58480011C980755005D191F /* WMEssenceViewController.m */; };
+		F58480051C980770005D191F /* WMFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58480041C980770005D191F /* WMFollowViewController.m */; };
+		F58480081C980787005D191F /* WMMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58480071C980787005D191F /* WMMeViewController.m */; };
+		F584800B1C980795005D191F /* WMNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F584800A1C980795005D191F /* WMNewViewController.m */; };
+		F584800E1C980C1C005D191F /* WMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F584800D1C980C1C005D191F /* WMNavigationController.m */; };
+		F58480111C98133E005D191F /* UIBarButtonItem+WMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F58480101C98133E005D191F /* UIBarButtonItem+WMExtension.m */; };
+		F58480141C982262005D191F /* WMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58480131C982262005D191F /* WMSettingViewController.m */; };
+		F58480171C984748005D191F /* WMRecommenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58480161C984748005D191F /* WMRecommenViewController.m */; };
 		F5C5673B1C97DF5300D76F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C5673A1C97DF5300D76F32 /* Assets.xcassets */; };
 		F5C567491C97DF5300D76F32 /* baisibudejieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C567481C97DF5300D76F32 /* baisibudejieTests.m */; };
 		F5C567541C97DF5300D76F32 /* baisibudejieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C567531C97DF5300D76F32 /* baisibudejieUITests.m */; };
-		F5C567631C97E03900D76F32 /* WMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C567621C97E03900D76F32 /* WMTabBarController.m */; };
-		F5C567671C97EA3100D76F32 /* WMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C567661C97EA3100D76F32 /* WMTabBar.m */; };
-		F5C5676A1C97EB1C00D76F32 /* UIView+WMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C567691C97EB1C00D76F32 /* UIView+WMExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +43,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F5847FEF1C980728005D191F /* UIView+WMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WMExtension.h"; sourceTree = "<group>"; };
+		F5847FF01C980728005D191F /* UIView+WMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WMExtension.m"; sourceTree = "<group>"; };
+		F5847FF21C980728005D191F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5847FF31C980728005D191F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5847FF41C980728005D191F /* WMTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTabBarController.h; sourceTree = "<group>"; };
+		F5847FF51C980728005D191F /* WMTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTabBarController.m; sourceTree = "<group>"; };
+		F5847FF61C980728005D191F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5847FF71C980728005D191F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F5847FF91C980728005D191F /* WMTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTabBar.h; sourceTree = "<group>"; };
+		F5847FFA1C980728005D191F /* WMTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTabBar.m; sourceTree = "<group>"; };
+		F58480001C980755005D191F /* WMEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMEssenceViewController.h; sourceTree = "<group>"; };
+		F58480011C980755005D191F /* WMEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMEssenceViewController.m; sourceTree = "<group>"; };
+		F58480031C980770005D191F /* WMFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMFollowViewController.h; sourceTree = "<group>"; };
+		F58480041C980770005D191F /* WMFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMFollowViewController.m; sourceTree = "<group>"; };
+		F58480061C980787005D191F /* WMMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMeViewController.h; sourceTree = "<group>"; };
+		F58480071C980787005D191F /* WMMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMeViewController.m; sourceTree = "<group>"; };
+		F58480091C980795005D191F /* WMNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMNewViewController.h; sourceTree = "<group>"; };
+		F584800A1C980795005D191F /* WMNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMNewViewController.m; sourceTree = "<group>"; };
+		F584800C1C980C1C005D191F /* WMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMNavigationController.h; sourceTree = "<group>"; };
+		F584800D1C980C1C005D191F /* WMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMNavigationController.m; sourceTree = "<group>"; };
+		F584800F1C98133E005D191F /* UIBarButtonItem+WMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WMExtension.h"; sourceTree = "<group>"; };
+		F58480101C98133E005D191F /* UIBarButtonItem+WMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WMExtension.m"; sourceTree = "<group>"; };
+		F58480121C982262005D191F /* WMSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSettingViewController.h; sourceTree = "<group>"; };
+		F58480131C982262005D191F /* WMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingViewController.m; sourceTree = "<group>"; };
+		F58480151C984748005D191F /* WMRecommenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRecommenViewController.h; sourceTree = "<group>"; };
+		F58480161C984748005D191F /* WMRecommenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRecommenViewController.m; sourceTree = "<group>"; };
 		F5C5672B1C97DF5300D76F32 /* baisibudejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baisibudejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5C5672F1C97DF5300D76F32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F5C567311C97DF5300D76F32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F5C567321C97DF5300D76F32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F5C5673A1C97DF5300D76F32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5C5673F1C97DF5300D76F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5C567441C97DF5300D76F32 /* baisibudejieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baisibudejieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,13 +78,6 @@
 		F5C5674F1C97DF5300D76F32 /* baisibudejieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baisibudejieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C567531C97DF5300D76F32 /* baisibudejieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = baisibudejieUITests.m; sourceTree = "<group>"; };
 		F5C567551C97DF5300D76F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5C567611C97E03900D76F32 /* WMTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTabBarController.h; sourceTree = "<group>"; };
-		F5C567621C97E03900D76F32 /* WMTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTabBarController.m; sourceTree = "<group>"; };
-		F5C567641C97E9C700D76F32 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		F5C567651C97EA3100D76F32 /* WMTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTabBar.h; sourceTree = "<group>"; };
-		F5C567661C97EA3100D76F32 /* WMTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTabBar.m; sourceTree = "<group>"; };
-		F5C567681C97EB1C00D76F32 /* UIView+WMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WMExtension.h"; sourceTree = "<group>"; };
-		F5C567691C97EB1C00D76F32 /* UIView+WMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WMExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +105,199 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5847FDC1C980728005D191F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F5847FDD1C980728005D191F /* Essence */,
+				F5847FE91C980728005D191F /* New */,
+				F5847FE11C980728005D191F /* Follow */,
+				F5847FE51C980728005D191F /* Me */,
+				F5847FED1C980728005D191F /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F5847FDD1C980728005D191F /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+				F5847FDE1C980728005D191F /* Controller */,
+				F5847FDF1C980728005D191F /* Model */,
+				F5847FE01C980728005D191F /* View */,
+			);
+			path = Essence;
+			sourceTree = "<group>";
+		};
+		F5847FDE1C980728005D191F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F58480001C980755005D191F /* WMEssenceViewController.h */,
+				F58480011C980755005D191F /* WMEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5847FDF1C980728005D191F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5847FE01C980728005D191F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5847FE11C980728005D191F /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				F5847FE21C980728005D191F /* Controller */,
+				F5847FE31C980728005D191F /* Model */,
+				F5847FE41C980728005D191F /* View */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		F5847FE21C980728005D191F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F58480031C980770005D191F /* WMFollowViewController.h */,
+				F58480041C980770005D191F /* WMFollowViewController.m */,
+				F58480151C984748005D191F /* WMRecommenViewController.h */,
+				F58480161C984748005D191F /* WMRecommenViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5847FE31C980728005D191F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5847FE41C980728005D191F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5847FE51C980728005D191F /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				F5847FE61C980728005D191F /* Controller */,
+				F5847FE71C980728005D191F /* Model */,
+				F5847FE81C980728005D191F /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		F5847FE61C980728005D191F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F58480061C980787005D191F /* WMMeViewController.h */,
+				F58480071C980787005D191F /* WMMeViewController.m */,
+				F58480121C982262005D191F /* WMSettingViewController.h */,
+				F58480131C982262005D191F /* WMSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5847FE71C980728005D191F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5847FE81C980728005D191F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5847FE91C980728005D191F /* New */ = {
+			isa = PBXGroup;
+			children = (
+				F5847FEA1C980728005D191F /* Controller */,
+				F5847FEB1C980728005D191F /* Model */,
+				F5847FEC1C980728005D191F /* View */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		F5847FEA1C980728005D191F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F58480091C980795005D191F /* WMNewViewController.h */,
+				F584800A1C980795005D191F /* WMNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5847FEB1C980728005D191F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5847FEC1C980728005D191F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5847FED1C980728005D191F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F5847FEE1C980728005D191F /* Category */,
+				F5847FF11C980728005D191F /* Controller */,
+				F5847FF61C980728005D191F /* main.m */,
+				F5847FF71C980728005D191F /* PrefixHeader.pch */,
+				F5847FF81C980728005D191F /* View */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F5847FEE1C980728005D191F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F5847FEF1C980728005D191F /* UIView+WMExtension.h */,
+				F5847FF01C980728005D191F /* UIView+WMExtension.m */,
+				F584800F1C98133E005D191F /* UIBarButtonItem+WMExtension.h */,
+				F58480101C98133E005D191F /* UIBarButtonItem+WMExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F5847FF11C980728005D191F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5847FF21C980728005D191F /* AppDelegate.h */,
+				F5847FF31C980728005D191F /* AppDelegate.m */,
+				F5847FF41C980728005D191F /* WMTabBarController.h */,
+				F5847FF51C980728005D191F /* WMTabBarController.m */,
+				F584800C1C980C1C005D191F /* WMNavigationController.h */,
+				F584800D1C980C1C005D191F /* WMNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5847FF81C980728005D191F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5847FF91C980728005D191F /* WMTabBar.h */,
+				F5847FFA1C980728005D191F /* WMTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F5C567221C97DF5300D76F32 = {
 			isa = PBXGroup;
 			children = (
@@ -104,18 +321,8 @@
 		F5C5672D1C97DF5300D76F32 /* baisibudejie */ = {
 			isa = PBXGroup;
 			children = (
-				F5C567311C97DF5300D76F32 /* AppDelegate.h */,
-				F5C567321C97DF5300D76F32 /* AppDelegate.m */,
-				F5C5673A1C97DF5300D76F32 /* Assets.xcassets */,
-				F5C5673F1C97DF5300D76F32 /* Info.plist */,
+				F5847FDC1C980728005D191F /* Classes */,
 				F5C5672E1C97DF5300D76F32 /* Supporting Files */,
-				F5C567611C97E03900D76F32 /* WMTabBarController.h */,
-				F5C567621C97E03900D76F32 /* WMTabBarController.m */,
-				F5C567641C97E9C700D76F32 /* PrefixHeader.pch */,
-				F5C567651C97EA3100D76F32 /* WMTabBar.h */,
-				F5C567661C97EA3100D76F32 /* WMTabBar.m */,
-				F5C567681C97EB1C00D76F32 /* UIView+WMExtension.h */,
-				F5C567691C97EB1C00D76F32 /* UIView+WMExtension.m */,
 			);
 			path = baisibudejie;
 			sourceTree = "<group>";
@@ -123,7 +330,8 @@
 		F5C5672E1C97DF5300D76F32 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F5C5672F1C97DF5300D76F32 /* main.m */,
+				F5C5673A1C97DF5300D76F32 /* Assets.xcassets */,
+				F5C5673F1C97DF5300D76F32 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -278,11 +486,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5C567331C97DF5300D76F32 /* AppDelegate.m in Sources */,
-				F5C5676A1C97EB1C00D76F32 /* UIView+WMExtension.m in Sources */,
-				F5C567671C97EA3100D76F32 /* WMTabBar.m in Sources */,
-				F5C567631C97E03900D76F32 /* WMTabBarController.m in Sources */,
-				F5C567301C97DF5300D76F32 /* main.m in Sources */,
+				F58480111C98133E005D191F /* UIBarButtonItem+WMExtension.m in Sources */,
+				F58480051C980770005D191F /* WMFollowViewController.m in Sources */,
+				F5847FFC1C980728005D191F /* AppDelegate.m in Sources */,
+				F58480021C980755005D191F /* WMEssenceViewController.m in Sources */,
+				F5847FFF1C980728005D191F /* WMTabBar.m in Sources */,
+				F58480141C982262005D191F /* WMSettingViewController.m in Sources */,
+				F58480081C980787005D191F /* WMMeViewController.m in Sources */,
+				F5847FFD1C980728005D191F /* WMTabBarController.m in Sources */,
+				F5847FFE1C980728005D191F /* main.m in Sources */,
+				F584800E1C980C1C005D191F /* WMNavigationController.m in Sources */,
+				F58480171C984748005D191F /* WMRecommenViewController.m in Sources */,
+				F584800B1C980795005D191F /* WMNewViewController.m in Sources */,
+				F5847FFB1C980728005D191F /* UIView+WMExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +619,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				GCC_PREFIX_HEADER = baisibudejie/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = baisibudejie/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = baisibudejie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -417,7 +633,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				GCC_PREFIX_HEADER = baisibudejie/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = baisibudejie/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = baisibudejie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

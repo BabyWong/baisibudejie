@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  WMNewViewController.h
 //  baisibudejie
 //
 //  Created by hwm on 16/3/15.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface WMNewViewController : UIViewController
 
 @end
-

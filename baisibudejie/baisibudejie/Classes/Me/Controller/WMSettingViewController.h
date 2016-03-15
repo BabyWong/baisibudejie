@@ -1,5 +1,5 @@
 //
-//  WMTabBarController.h
+//  WMSettingViewController.h
 //  baisibudejie
 //
 //  Created by hwm on 16/3/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WMTabBarController : UITabBarController
+@interface WMSettingViewController : UIViewController
 
 @end

@@ -1,5 +1,5 @@
 //
-//  WMTabBar.h
+//  WMFollowViewController.h
 //  baisibudejie
 //
 //  Created by hwm on 16/3/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WMTabBar : UITabBar
+@interface WMFollowViewController : UIViewController
 
 @end
