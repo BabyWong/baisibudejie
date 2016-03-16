@@ -50,12 +50,14 @@
 }
 
 - (void)setUpChildController {
+        
+    [self setUpOneChildController:[[WMNavigationController alloc] initWithRootViewController:[[WMFollowViewController alloc] init]] image:[UIImage imageNamed:@"tabBar_friendTrends_icon"]  selectImage:[UIImage imageNamed:@"tabBar_friendTrends_click_icon"] title:@"关注"];
     
     [self setUpOneChildController:[[WMNavigationController alloc] initWithRootViewController:[[WMEssenceViewController alloc] init]] image:[UIImage imageNamed:@"tabBar_essence_icon"]  selectImage:[UIImage imageNamed:@"tabBar_essence_click_icon"] title:@"精华"];
     
     [self setUpOneChildController:[[WMNavigationController alloc] initWithRootViewController:[[WMNewViewController alloc] init]] image:[UIImage imageNamed:@"tabBar_new_icon"]  selectImage:[UIImage imageNamed:@"tabBar_new_click_icon"] title:@"新帖"];
     
-    [self setUpOneChildController:[[WMNavigationController alloc] initWithRootViewController:[[WMFollowViewController alloc] init]] image:[UIImage imageNamed:@"tabBar_friendTrends_icon"]  selectImage:[UIImage imageNamed:@"tabBar_friendTrends_click_icon"] title:@"关注"];
+    
     
     [self setUpOneChildController:[[WMNavigationController alloc] initWithRootViewController:[[WMMeViewController alloc] init]] image:[UIImage imageNamed:@"tabBar_me_icon"]  selectImage:[UIImage imageNamed:@"tabBar_me_click_icon"] title:@"我"];
     

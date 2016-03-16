@@ -20,6 +20,10 @@
 		F58480111C98133E005D191F /* UIBarButtonItem+WMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F58480101C98133E005D191F /* UIBarButtonItem+WMExtension.m */; };
 		F58480141C982262005D191F /* WMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58480131C982262005D191F /* WMSettingViewController.m */; };
 		F58480171C984748005D191F /* WMRecommenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58480161C984748005D191F /* WMRecommenViewController.m */; };
+		F5B1444E1C99029300019A73 /* WMLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B1444D1C99029300019A73 /* WMLoginRegisterViewController.m */; };
+		F5B144511C991C5500019A73 /* WMQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B144501C991C5500019A73 /* WMQuickLoginButton.m */; };
+		F5B144541C99396D00019A73 /* WMLoginRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B144531C99396D00019A73 /* WMLoginRegister.m */; };
+		F5B144571C99401600019A73 /* WMThreeLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B144561C99401600019A73 /* WMThreeLogin.m */; };
 		F5C5673B1C97DF5300D76F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C5673A1C97DF5300D76F32 /* Assets.xcassets */; };
 		F5C567491C97DF5300D76F32 /* baisibudejieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C567481C97DF5300D76F32 /* baisibudejieTests.m */; };
 		F5C567541C97DF5300D76F32 /* baisibudejieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C567531C97DF5300D76F32 /* baisibudejieUITests.m */; };
@@ -69,6 +73,14 @@
 		F58480131C982262005D191F /* WMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingViewController.m; sourceTree = "<group>"; };
 		F58480151C984748005D191F /* WMRecommenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRecommenViewController.h; sourceTree = "<group>"; };
 		F58480161C984748005D191F /* WMRecommenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRecommenViewController.m; sourceTree = "<group>"; };
+		F5B1444C1C99029300019A73 /* WMLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLoginRegisterViewController.h; sourceTree = "<group>"; };
+		F5B1444D1C99029300019A73 /* WMLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLoginRegisterViewController.m; sourceTree = "<group>"; };
+		F5B1444F1C991C5500019A73 /* WMQuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMQuickLoginButton.h; sourceTree = "<group>"; };
+		F5B144501C991C5500019A73 /* WMQuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMQuickLoginButton.m; sourceTree = "<group>"; };
+		F5B144521C99396D00019A73 /* WMLoginRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLoginRegister.h; sourceTree = "<group>"; };
+		F5B144531C99396D00019A73 /* WMLoginRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLoginRegister.m; sourceTree = "<group>"; };
+		F5B144551C99401600019A73 /* WMThreeLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMThreeLogin.h; sourceTree = "<group>"; };
+		F5B144561C99401600019A73 /* WMThreeLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMThreeLogin.m; sourceTree = "<group>"; };
 		F5C5672B1C97DF5300D76F32 /* baisibudejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baisibudejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C5673A1C97DF5300D76F32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5C5673F1C97DF5300D76F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -167,6 +179,8 @@
 				F58480041C980770005D191F /* WMFollowViewController.m */,
 				F58480151C984748005D191F /* WMRecommenViewController.h */,
 				F58480161C984748005D191F /* WMRecommenViewController.m */,
+				F5B1444C1C99029300019A73 /* WMLoginRegisterViewController.h */,
+				F5B1444D1C99029300019A73 /* WMLoginRegisterViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +195,10 @@
 		F5847FE41C980728005D191F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F5B144521C99396D00019A73 /* WMLoginRegister.h */,
+				F5B144531C99396D00019A73 /* WMLoginRegister.m */,
+				F5B144551C99401600019A73 /* WMThreeLogin.h */,
+				F5B144561C99401600019A73 /* WMThreeLogin.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,6 +312,8 @@
 			children = (
 				F5847FF91C980728005D191F /* WMTabBar.h */,
 				F5847FFA1C980728005D191F /* WMTabBar.m */,
+				F5B1444F1C991C5500019A73 /* WMQuickLoginButton.h */,
+				F5B144501C991C5500019A73 /* WMQuickLoginButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -487,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F58480111C98133E005D191F /* UIBarButtonItem+WMExtension.m in Sources */,
+				F5B144511C991C5500019A73 /* WMQuickLoginButton.m in Sources */,
 				F58480051C980770005D191F /* WMFollowViewController.m in Sources */,
 				F5847FFC1C980728005D191F /* AppDelegate.m in Sources */,
 				F58480021C980755005D191F /* WMEssenceViewController.m in Sources */,
@@ -494,10 +515,13 @@
 				F58480141C982262005D191F /* WMSettingViewController.m in Sources */,
 				F58480081C980787005D191F /* WMMeViewController.m in Sources */,
 				F5847FFD1C980728005D191F /* WMTabBarController.m in Sources */,
+				F5B144571C99401600019A73 /* WMThreeLogin.m in Sources */,
 				F5847FFE1C980728005D191F /* main.m in Sources */,
 				F584800E1C980C1C005D191F /* WMNavigationController.m in Sources */,
 				F58480171C984748005D191F /* WMRecommenViewController.m in Sources */,
+				F5B1444E1C99029300019A73 /* WMLoginRegisterViewController.m in Sources */,
 				F584800B1C980795005D191F /* WMNewViewController.m in Sources */,
+				F5B144541C99396D00019A73 /* WMLoginRegister.m in Sources */,
 				F5847FFB1C980728005D191F /* UIView+WMExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
