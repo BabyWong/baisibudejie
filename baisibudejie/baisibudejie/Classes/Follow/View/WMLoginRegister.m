@@ -16,6 +16,7 @@
 
 
 
+
 @end
 
 @implementation WMLoginRegister
@@ -26,7 +27,7 @@
     self = [super init];
     if (self) {
         
-        self.backgroundColor = [UIColor clearColor];
+//        self.backgroundColor = [UIColor clearColor];
         
         // account
         self.accountTextField = [[UITextField alloc] init];
@@ -78,6 +79,13 @@
         [_loginButton addTarget:self action:@selector(loginRegisteClick) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_loginButton];
         
+        // 忘记密码
+        self.forgetButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [self.forgetButton setTitle:@"忘记密码?" forState:UIControlStateNormal];
+        self.forgetButton.titleLabel.font = [UIFont systemFontOfSize:14];
+        self.forgetButton.titleLabel.textColor = [UIColor whiteColor];
+        [self addSubview:self.forgetButton];
+        
     }
     return self;
 }
@@ -95,6 +103,10 @@
     
     _loginButton.frame = CGRectMake(0, 0, 250, 40);
     _loginButton.center = CGPointMake(self.frame.size.width / 2, self.frame.size.height * 2.2 / 3);
+    
+    // 忘记密码
+    self.forgetButton.frame = CGRectMake(self.wm_width - 100, _loginButton.wm_bottom + 5, 90, 44);
+    
 
 }
 

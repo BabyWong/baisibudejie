@@ -45,8 +45,8 @@
     self.registerBT = [UIButton buttonWithType:UIButtonTypeCustom];
     [_registerBT setTitle:@"注册账号" forState:UIControlStateNormal];
     _registerBT.tintColor = [UIColor whiteColor];
-    [_registerBT sizeToFit];
-    _registerBT.center = CGPointMake(self.view.wm_width - 60, 50);
+    _registerBT.frame = CGRectMake(0, 0, 100, 50);
+    _registerBT.center = CGPointMake(self.view.wm_width - 50, 50);
     [_registerBT addTarget:self action:@selector(registerClick:) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:_registerBT];
     
@@ -69,10 +69,6 @@
 }
 
 
-- (void)loginRegisteClick {
-    WMLog(@"login");
-}
-
 - (void)registerClick:(UIButton *)button {
     
     // 退出键盘
@@ -80,13 +76,13 @@
         
     // 设置约束 和 按钮状态
     if ([self.registerBT.titleLabel.text isEqualToString:@"注册账号"]) { // 目前显示的是注册界面, 点击按钮后要切换为登录界面
-        [self.viewLogin.loginButton setTitle:@"登录" forState:UIControlStateNormal];
-            button.selected = NO;
-            [button setTitle:@"注册帐号" forState:UIControlStateNormal];
+        [self.viewLogin.loginButton setTitle:@"注册" forState:UIControlStateNormal];
+        _viewLogin.forgetButton.hidden = YES;
+            [button setTitle:@"已有账号" forState:UIControlStateNormal];
     } else { // 目前显示的是登录界面, 点击按钮后要切换为注册界面
-            [self.viewLogin.loginButton setTitle:@"注册" forState:UIControlStateNormal];
-            button.selected = YES;
-            [button setTitle:@"已有帐号?" forState:UIControlStateNormal];
+            [self.viewLogin.loginButton setTitle:@"登录" forState:UIControlStateNormal];
+        _viewLogin.forgetButton.hidden = NO;
+            [button setTitle:@"注册账号" forState:UIControlStateNormal];
     }
     
     // 动画
@@ -97,18 +93,11 @@
     }];
 }
 
-    
-//    [self.registerBT setTitle:@"已有账号?" forState:UIControlStateNormal];
-//    [_registerBT addTarget:self action:@selector(loginClick) forControlEvents:(UIControlEventTouchUpInside)];
-//    [_registerBT sizeToFit];
-
-
-
-- (void)loginClick {
-    
-    [self.registerBT setTitle:@"注册账号" forState:UIControlStateNormal];
-    [_registerBT addTarget:self action:@selector(registerClick) forControlEvents:(UIControlEventTouchUpInside)];
-}
+//- (void)loginClick {
+//    
+//    [self.registerBT setTitle:@"注册账号" forState:UIControlStateNormal];
+//    [_registerBT addTarget:self action:@selector(registerClick) forControlEvents:(UIControlEventTouchUpInside)];
+//}
 
 - (void)cancelClick {
     

@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) UIButton *loginButton;
 
+@property (nonatomic, strong) UIButton *forgetButton;
+
 @end
