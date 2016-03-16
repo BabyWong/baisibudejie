@@ -7,12 +7,13 @@
 //
 
 #import "WMLoginRegister.h"
+#import "WMTextField.h"
 
 @interface WMLoginRegister ()
 
-@property (nonatomic, strong) UITextField *accountTextField;
+@property (nonatomic, strong) WMTextField *accountTextField;
 
-@property (nonatomic, strong) UITextField *passwordTextField;
+@property (nonatomic, strong) WMTextField *passwordTextField;
 
 
 
@@ -29,25 +30,33 @@
         
 //        self.backgroundColor = [UIColor clearColor];
         
+        NSMutableDictionary *str = [NSMutableDictionary dictionary];
+        str[NSForegroundColorAttributeName] = [UIColor whiteColor];
+        
         // account
-        self.accountTextField = [[UITextField alloc] init];
+        self.accountTextField = [[WMTextField alloc] init];
         [_accountTextField sizeToFit];
-        _accountTextField.placeholder = @"手机号";
+        _accountTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"手机号" attributes:str];
         _accountTextField.tintColor = [UIColor whiteColor];
         _accountTextField.font = [UIFont systemFontOfSize:16];
-        _accountTextField.borderStyle = UITextBorderStyleRoundedRect;
+        _accountTextField.borderStyle = UITextBorderStyleNone;
+        _accountTextField.layer.cornerRadius = 6;
+        _accountTextField.clipsToBounds = YES;
         _accountTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         _accountTextField.keyboardType = UIKeyboardTypeNumberPad;
         _accountTextField.backgroundColor = [UIColor darkGrayColor];
         [self addSubview:_accountTextField];
         
         // password
-        self.passwordTextField = [[UITextField alloc] init];
+        self.passwordTextField = [[WMTextField alloc] init];
         [_passwordTextField sizeToFit];
-        _passwordTextField.placeholder = @"密码";
+        _passwordTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"密码" attributes:str];
+        _accountTextField.tintColor = [UIColor whiteColor];
         _passwordTextField.tintColor = [UIColor whiteColor];
         _passwordTextField.font = [UIFont systemFontOfSize:16];
-        _passwordTextField.borderStyle = UITextBorderStyleRoundedRect;
+        _passwordTextField.borderStyle = UITextBorderStyleNone;
+        _passwordTextField.layer.cornerRadius = 6;
+        _passwordTextField.clipsToBounds = YES;
         _passwordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         _passwordTextField.secureTextEntry = YES;
         _passwordTextField.keyboardType = UIKeyboardTypeDefault;
@@ -89,6 +98,8 @@
     }
     return self;
 }
+
+
 
 
 - (void)layoutSubviews {

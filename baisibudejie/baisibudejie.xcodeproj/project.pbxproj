@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F58237C51C996718008BBC63 /* WMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F58237C41C996718008BBC63 /* WMTextField.m */; };
 		F5847FFB1C980728005D191F /* UIView+WMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F5847FF01C980728005D191F /* UIView+WMExtension.m */; };
 		F5847FFC1C980728005D191F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5847FF31C980728005D191F /* AppDelegate.m */; };
 		F5847FFD1C980728005D191F /* WMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5847FF51C980728005D191F /* WMTabBarController.m */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F58237C31C996718008BBC63 /* WMTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTextField.h; sourceTree = "<group>"; };
+		F58237C41C996718008BBC63 /* WMTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTextField.m; sourceTree = "<group>"; };
 		F5847FEF1C980728005D191F /* UIView+WMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WMExtension.h"; sourceTree = "<group>"; };
 		F5847FF01C980728005D191F /* UIView+WMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WMExtension.m"; sourceTree = "<group>"; };
 		F5847FF21C980728005D191F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -199,6 +202,8 @@
 				F5B144531C99396D00019A73 /* WMLoginRegister.m */,
 				F5B144551C99401600019A73 /* WMThreeLogin.h */,
 				F5B144561C99401600019A73 /* WMThreeLogin.m */,
+				F58237C31C996718008BBC63 /* WMTextField.h */,
+				F58237C41C996718008BBC63 /* WMTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -513,6 +518,7 @@
 				F58480021C980755005D191F /* WMEssenceViewController.m in Sources */,
 				F5847FFF1C980728005D191F /* WMTabBar.m in Sources */,
 				F58480141C982262005D191F /* WMSettingViewController.m in Sources */,
+				F58237C51C996718008BBC63 /* WMTextField.m in Sources */,
 				F58480081C980787005D191F /* WMMeViewController.m in Sources */,
 				F5847FFD1C980728005D191F /* WMTabBarController.m in Sources */,
 				F5B144571C99401600019A73 /* WMThreeLogin.m in Sources */,

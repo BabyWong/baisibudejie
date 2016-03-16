@@ -38,16 +38,17 @@
     [backButton setImage:[UIImage imageNamed:@"login_close_icon"] forState:UIControlStateNormal];
     [backButton sizeToFit];
     backButton.center = CGPointMake(30, 50);
-    [backButton addTarget:self action:@selector(cancelClick) forControlEvents:(UIControlEventTouchUpInside)];
+    [backButton addTarget:self action:@selector(close) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:backButton];
     
     // register
     self.registerBT = [UIButton buttonWithType:UIButtonTypeCustom];
     [_registerBT setTitle:@"注册账号" forState:UIControlStateNormal];
     _registerBT.tintColor = [UIColor whiteColor];
+    _registerBT.titleLabel.font = [UIFont systemFontOfSize:14];
     _registerBT.frame = CGRectMake(0, 0, 100, 50);
     _registerBT.center = CGPointMake(self.view.wm_width - 50, 50);
-    [_registerBT addTarget:self action:@selector(registerClick:) forControlEvents:(UIControlEventTouchUpInside)];
+    [_registerBT addTarget:self action:@selector(showLoginOrRegister:) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:_registerBT];
     
     // account / passworld
@@ -60,7 +61,7 @@
     // threeLogin
     WMThreeLogin *three = [[WMThreeLogin alloc] init];
     three.wm_bottom = self.view.wm_bottom;
-    three.frame = CGRectMake(0, 0, self.view.wm_width, 245);
+    three.frame = CGRectMake(0, 0, self.view.wm_width, 220);
     three.center = CGPointMake(self.view.wm_centerX, self.view.wm_centerY * 1.7);
     [self.view addSubview:three];
     
@@ -69,7 +70,7 @@
 }
 
 
-- (void)registerClick:(UIButton *)button {
+- (void)showLoginOrRegister:(UIButton *)button {
     
     // 退出键盘
     [self.view endEditing:YES];
@@ -93,13 +94,7 @@
     }];
 }
 
-//- (void)loginClick {
-//    
-//    [self.registerBT setTitle:@"注册账号" forState:UIControlStateNormal];
-//    [_registerBT addTarget:self action:@selector(registerClick) forControlEvents:(UIControlEventTouchUpInside)];
-//}
-
-- (void)cancelClick {
+- (void)close {
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
