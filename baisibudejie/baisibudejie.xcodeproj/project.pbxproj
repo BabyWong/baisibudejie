@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CFB5B93CC05F6028AD5315FC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13880DE926FEE5593765F18B /* libPods.a */; };
+		F54DB89D1C9AAF0D00183488 /* WMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54DB89B1C9AAF0D00183488 /* WMWebViewController.m */; };
+		F54DB89E1C9AAF0D00183488 /* WMWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54DB89C1C9AAF0D00183488 /* WMWebViewController.xib */; };
 		F58237C51C996718008BBC63 /* WMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F58237C41C996718008BBC63 /* WMTextField.m */; };
 		F5847FFB1C980728005D191F /* UIView+WMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F5847FF01C980728005D191F /* UIView+WMExtension.m */; };
 		F5847FFC1C980728005D191F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5847FF31C980728005D191F /* AppDelegate.m */; };
@@ -56,6 +58,9 @@
 		13880DE926FEE5593765F18B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D6532CA4264B5F470C11D7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		432A7B7845171E8D6ED8872C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F54DB89A1C9AAF0D00183488 /* WMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMWebViewController.h; sourceTree = "<group>"; };
+		F54DB89B1C9AAF0D00183488 /* WMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMWebViewController.m; sourceTree = "<group>"; };
+		F54DB89C1C9AAF0D00183488 /* WMWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMWebViewController.xib; sourceTree = "<group>"; };
 		F58237C31C996718008BBC63 /* WMTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTextField.h; sourceTree = "<group>"; };
 		F58237C41C996718008BBC63 /* WMTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTextField.m; sourceTree = "<group>"; };
 		F5847FEF1C980728005D191F /* UIView+WMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WMExtension.h"; sourceTree = "<group>"; };
@@ -259,6 +264,9 @@
 				F58480071C980787005D191F /* WMMeViewController.m */,
 				F58480121C982262005D191F /* WMSettingViewController.h */,
 				F58480131C982262005D191F /* WMSettingViewController.m */,
+				F54DB89A1C9AAF0D00183488 /* WMWebViewController.h */,
+				F54DB89B1C9AAF0D00183488 /* WMWebViewController.m */,
+				F54DB89C1C9AAF0D00183488 /* WMWebViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -534,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5C5673B1C97DF5300D76F32 /* Assets.xcassets in Resources */,
+				F54DB89E1C9AAF0D00183488 /* WMWebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +624,7 @@
 				F5A4C60B1C9A727600788411 /* WMMeSquare.m in Sources */,
 				F58480141C982262005D191F /* WMSettingViewController.m in Sources */,
 				F58237C51C996718008BBC63 /* WMTextField.m in Sources */,
+				F54DB89D1C9AAF0D00183488 /* WMWebViewController.m in Sources */,
 				F58480081C980787005D191F /* WMMeViewController.m in Sources */,
 				F5A4C6141C9A9E3F00788411 /* WMMeSquareButton.m in Sources */,
 				F5847FFD1C980728005D191F /* WMTabBarController.m in Sources */,

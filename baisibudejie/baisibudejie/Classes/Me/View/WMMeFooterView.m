@@ -12,6 +12,7 @@
 #import <MJExtension.h>
 #import <UIButton+WebCache.h>
 #import "WMMeSquareButton.h"
+#import "WMWebViewController.h"
 
 @implementation WMMeFooterView
 
@@ -95,11 +96,21 @@
 
 - (void)buttonClick:(WMMeSquareButton *)button {
     
-    WMLog(@"ww");
+    
     WMMeSquare *square = button.squares;
+    NSString *url = square.url;
     
     if ([square.url hasPrefix:@"http"]) { // 利用webView加载url即可
         WMLog(@"利用webView加载url");
+        
+        // 获得"我"模块对应的导航控制器
+        UITabBarController *tabBar = (UITabBarController *)self.window.rootViewController;
+        UINavigationController *nav = tabBar.selectedViewController;
+        WMWebViewController *web = [[WMWebViewController alloc] init];
+        web.url = url;
+        web.navigationItem.title = button.currentTitle;
+        [nav pushViewController:web animated:YES];
+        
     } else if ([square.url hasPrefix:@"mod"]) { // 另行处理
         if ([square.url hasSuffix:@"BDJ_To_Check"]) {
             WMLog(@"跳转到[审帖]界面");
