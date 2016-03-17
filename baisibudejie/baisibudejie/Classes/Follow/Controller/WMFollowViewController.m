@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = WMCommonBgColor;
+    
     self.navigationItem.title = @"我的关注";
     
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" selectImage:@"friendsRecommentIcon-click" targe:self action:@selector(recommenClick)];
@@ -61,13 +63,14 @@
     [loginButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
     [loginButton setTitle:@"立即登录注册" forState:UIControlStateNormal];
+    loginButton.titleLabel.font = [UIFont systemFontOfSize:15];
     [loginButton setBackgroundImage:[UIImage imageNamed:@"friendsTrend_login"] forState:UIControlStateNormal];
     [loginButton setBackgroundImage:[UIImage imageNamed:@"friendsTrend_login_click"] forState:UIControlStateHighlighted];
     loginButton.layer.cornerRadius = 7;
     loginButton.clipsToBounds = YES;
     [loginButton addTarget:self action:@selector(loginRegisteClick) forControlEvents:UIControlEventTouchUpInside];
-    [loginButton sizeToFit];
-    loginButton.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height * 2 / 3);
+    loginButton.frame = CGRectMake(0, 0, 250, 35);
+    loginButton.center = CGPointMake(self.view.frame.size.width / 2, self.view.frame.size.height * 1.9 / 3);
     [self.view addSubview:loginButton];
 
     

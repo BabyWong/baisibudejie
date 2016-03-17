@@ -23,11 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //
-//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
-
-     
-    
     UIImageView *backGroudImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"login_register_background"]];
     backGroudImage.frame = self.view.frame;
     [self.view addSubview:backGroudImage];
@@ -55,6 +50,8 @@
     self.viewLogin = [[WMLoginRegister alloc] init];
     _viewLogin.frame = CGRectMake(0 , 0, 300, 250);
     _viewLogin.center = CGPointMake(self.view.wm_centerX, self.view.wm_centerY * 1.8/ 3);
+    
+    [_viewLogin.loginButton addTarget:self action:@selector(loginClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_viewLogin];
     
 
@@ -64,14 +61,25 @@
     three.frame = CGRectMake(0, 0, self.view.wm_width, 220);
     three.center = CGPointMake(self.view.wm_centerX, self.view.wm_centerY * 1.7);
     [self.view addSubview:three];
+}
+
+- (void)loginClick:(UIButton *)button {
     
-    
+    WMLog(@"login");
     
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
+}
 
 - (void)showLoginOrRegister:(UIButton *)button {
-    
     // 退出键盘
     [self.view endEditing:YES];
         
