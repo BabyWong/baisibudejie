@@ -78,10 +78,37 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:settingID];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:settingID];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    }
+        }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"清除缓存%zd",self.size];
+    // 转圈圈
+    UIActivityIndicatorView *loadView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    [loadView startAnimating];
+    // 设置右边的指示器
+    cell.accessoryView = loadView;
+    // 设置文字
+    cell.textLabel.text = @"清除缓存(正在计算缓存大小...)";
+    
+    // 在子线程计算缓存大小
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+        [self getCacheSize];
+        // 生成文字
+        NSString *text = [NSString stringWithFormat:@"清除缓存(%zdB)", self.size];
+        
+    // 回到主线程
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        // 清空右边的指示器
+        cell.accessoryView = nil;
+        // 显示右边的箭头
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        // 设置文字
+        cell.textLabel.text = text;
+        
+    });
+        
+    });
+    
     
     return cell;
 }
