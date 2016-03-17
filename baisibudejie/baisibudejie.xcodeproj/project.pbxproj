@@ -22,6 +22,9 @@
 		F58480111C98133E005D191F /* UIBarButtonItem+WMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F58480101C98133E005D191F /* UIBarButtonItem+WMExtension.m */; };
 		F58480141C982262005D191F /* WMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58480131C982262005D191F /* WMSettingViewController.m */; };
 		F58480171C984748005D191F /* WMRecommenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58480161C984748005D191F /* WMRecommenViewController.m */; };
+		F5A4C60B1C9A727600788411 /* WMMeSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A4C60A1C9A727600788411 /* WMMeSquare.m */; };
+		F5A4C60E1C9A72A100788411 /* WMMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A4C60D1C9A72A100788411 /* WMMeCell.m */; };
+		F5A4C6111C9A72CE00788411 /* WMMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A4C6101C9A72CE00788411 /* WMMeFooterView.m */; };
 		F5B1444E1C99029300019A73 /* WMLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B1444D1C99029300019A73 /* WMLoginRegisterViewController.m */; };
 		F5B144511C991C5500019A73 /* WMQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B144501C991C5500019A73 /* WMQuickLoginButton.m */; };
 		F5B144541C99396D00019A73 /* WMLoginRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B144531C99396D00019A73 /* WMLoginRegister.m */; };
@@ -80,6 +83,12 @@
 		F58480131C982262005D191F /* WMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingViewController.m; sourceTree = "<group>"; };
 		F58480151C984748005D191F /* WMRecommenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRecommenViewController.h; sourceTree = "<group>"; };
 		F58480161C984748005D191F /* WMRecommenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRecommenViewController.m; sourceTree = "<group>"; };
+		F5A4C6091C9A727600788411 /* WMMeSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMeSquare.h; sourceTree = "<group>"; };
+		F5A4C60A1C9A727600788411 /* WMMeSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMeSquare.m; sourceTree = "<group>"; };
+		F5A4C60C1C9A72A100788411 /* WMMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMeCell.h; sourceTree = "<group>"; };
+		F5A4C60D1C9A72A100788411 /* WMMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMeCell.m; sourceTree = "<group>"; };
+		F5A4C60F1C9A72CE00788411 /* WMMeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMeFooterView.h; sourceTree = "<group>"; };
+		F5A4C6101C9A72CE00788411 /* WMMeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMeFooterView.m; sourceTree = "<group>"; };
 		F5B1444C1C99029300019A73 /* WMLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLoginRegisterViewController.h; sourceTree = "<group>"; };
 		F5B1444D1C99029300019A73 /* WMLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLoginRegisterViewController.m; sourceTree = "<group>"; };
 		F5B1444F1C991C5500019A73 /* WMQuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMQuickLoginButton.h; sourceTree = "<group>"; };
@@ -254,6 +263,8 @@
 		F5847FE71C980728005D191F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F5A4C6091C9A727600788411 /* WMMeSquare.h */,
+				F5A4C60A1C9A727600788411 /* WMMeSquare.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -261,6 +272,10 @@
 		F5847FE81C980728005D191F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F5A4C60C1C9A72A100788411 /* WMMeCell.h */,
+				F5A4C60D1C9A72A100788411 /* WMMeCell.m */,
+				F5A4C60F1C9A72CE00788411 /* WMMeFooterView.h */,
+				F5A4C6101C9A72CE00788411 /* WMMeFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -592,11 +607,14 @@
 				F5847FFC1C980728005D191F /* AppDelegate.m in Sources */,
 				F58480021C980755005D191F /* WMEssenceViewController.m in Sources */,
 				F5847FFF1C980728005D191F /* WMTabBar.m in Sources */,
+				F5A4C60B1C9A727600788411 /* WMMeSquare.m in Sources */,
 				F58480141C982262005D191F /* WMSettingViewController.m in Sources */,
 				F58237C51C996718008BBC63 /* WMTextField.m in Sources */,
 				F58480081C980787005D191F /* WMMeViewController.m in Sources */,
 				F5847FFD1C980728005D191F /* WMTabBarController.m in Sources */,
+				F5A4C60E1C9A72A100788411 /* WMMeCell.m in Sources */,
 				F5B144571C99401600019A73 /* WMThreeLogin.m in Sources */,
+				F5A4C6111C9A72CE00788411 /* WMMeFooterView.m in Sources */,
 				F5847FFE1C980728005D191F /* main.m in Sources */,
 				F584800E1C980C1C005D191F /* WMNavigationController.m in Sources */,
 				F58480171C984748005D191F /* WMRecommenViewController.m in Sources */,

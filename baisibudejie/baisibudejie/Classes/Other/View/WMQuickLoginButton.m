@@ -4,7 +4,7 @@
 //
 //  Created by hwm on 16/3/16.
 //  Copyright © 2016年 hwm. All rights reserved.
-//
+//  图片在中间,文字在下面
 
 #import "WMQuickLoginButton.h"
 
