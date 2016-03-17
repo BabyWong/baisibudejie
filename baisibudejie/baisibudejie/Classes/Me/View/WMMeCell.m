@@ -29,13 +29,12 @@
     
     if (self.imageView.image == nil) return;// 没有图片
     
-    CGFloat margin = 10;
-//    self.imageView.wm_x = margin;
+    CGFloat margin = 5;
     self.imageView.wm_height = self.wm_height - 2 * margin;
     self.imageView.wm_width = self.imageView.wm_height;
     self.imageView.wm_y = margin;
     
-    self.textLabel.wm_x = self.imageView.wm_right + margin;
+    self.textLabel.wm_x = self.imageView.wm_right + 10;
     
 }
 

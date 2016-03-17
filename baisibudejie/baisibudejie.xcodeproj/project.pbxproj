@@ -25,6 +25,7 @@
 		F5A4C60B1C9A727600788411 /* WMMeSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A4C60A1C9A727600788411 /* WMMeSquare.m */; };
 		F5A4C60E1C9A72A100788411 /* WMMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A4C60D1C9A72A100788411 /* WMMeCell.m */; };
 		F5A4C6111C9A72CE00788411 /* WMMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A4C6101C9A72CE00788411 /* WMMeFooterView.m */; };
+		F5A4C6141C9A9E3F00788411 /* WMMeSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A4C6131C9A9E3F00788411 /* WMMeSquareButton.m */; };
 		F5B1444E1C99029300019A73 /* WMLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B1444D1C99029300019A73 /* WMLoginRegisterViewController.m */; };
 		F5B144511C991C5500019A73 /* WMQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B144501C991C5500019A73 /* WMQuickLoginButton.m */; };
 		F5B144541C99396D00019A73 /* WMLoginRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B144531C99396D00019A73 /* WMLoginRegister.m */; };
@@ -89,6 +90,8 @@
 		F5A4C60D1C9A72A100788411 /* WMMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMeCell.m; sourceTree = "<group>"; };
 		F5A4C60F1C9A72CE00788411 /* WMMeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMeFooterView.h; sourceTree = "<group>"; };
 		F5A4C6101C9A72CE00788411 /* WMMeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMeFooterView.m; sourceTree = "<group>"; };
+		F5A4C6121C9A9E3F00788411 /* WMMeSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMeSquareButton.h; sourceTree = "<group>"; };
+		F5A4C6131C9A9E3F00788411 /* WMMeSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMeSquareButton.m; sourceTree = "<group>"; };
 		F5B1444C1C99029300019A73 /* WMLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLoginRegisterViewController.h; sourceTree = "<group>"; };
 		F5B1444D1C99029300019A73 /* WMLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLoginRegisterViewController.m; sourceTree = "<group>"; };
 		F5B1444F1C991C5500019A73 /* WMQuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMQuickLoginButton.h; sourceTree = "<group>"; };
@@ -276,6 +279,8 @@
 				F5A4C60D1C9A72A100788411 /* WMMeCell.m */,
 				F5A4C60F1C9A72CE00788411 /* WMMeFooterView.h */,
 				F5A4C6101C9A72CE00788411 /* WMMeFooterView.m */,
+				F5A4C6121C9A9E3F00788411 /* WMMeSquareButton.h */,
+				F5A4C6131C9A9E3F00788411 /* WMMeSquareButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -611,6 +616,7 @@
 				F58480141C982262005D191F /* WMSettingViewController.m in Sources */,
 				F58237C51C996718008BBC63 /* WMTextField.m in Sources */,
 				F58480081C980787005D191F /* WMMeViewController.m in Sources */,
+				F5A4C6141C9A9E3F00788411 /* WMMeSquareButton.m in Sources */,
 				F5847FFD1C980728005D191F /* WMTabBarController.m in Sources */,
 				F5A4C60E1C9A72A100788411 /* WMMeCell.m in Sources */,
 				F5B144571C99401600019A73 /* WMThreeLogin.m in Sources */,
