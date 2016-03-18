@@ -12,6 +12,12 @@
 		F53ACF5A1C9BA210008507C5 /* WMClearCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F53ACF591C9BA210008507C5 /* WMClearCell.m */; };
 		F53ACF5D1C9BB757008507C5 /* WMOtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F53ACF5C1C9BB757008507C5 /* WMOtherCell.m */; };
 		F53ACF5F1C9BC0A8008507C5 /* WMOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53ACF5E1C9BC0A8008507C5 /* WMOtherCell.xib */; };
+		F53ACF621C9BDFA5008507C5 /* WMTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F53ACF611C9BDFA5008507C5 /* WMTitleButton.m */; };
+		F53ACF651C9BF27D008507C5 /* WMAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53ACF641C9BF27D008507C5 /* WMAllViewController.m */; };
+		F53ACF681C9BF2AF008507C5 /* WMVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53ACF671C9BF2AF008507C5 /* WMVideoViewController.m */; };
+		F53ACF6B1C9BF39C008507C5 /* WMVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53ACF6A1C9BF39C008507C5 /* WMVoiceViewController.m */; };
+		F53ACF6E1C9BF3A7008507C5 /* WMPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53ACF6D1C9BF3A7008507C5 /* WMPictureViewController.m */; };
+		F53ACF711C9BF3B1008507C5 /* WMWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53ACF701C9BF3B1008507C5 /* WMWordViewController.m */; };
 		F54DB89D1C9AAF0D00183488 /* WMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54DB89B1C9AAF0D00183488 /* WMWebViewController.m */; };
 		F54DB89E1C9AAF0D00183488 /* WMWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54DB89C1C9AAF0D00183488 /* WMWebViewController.xib */; };
 		F58237C51C996718008BBC63 /* WMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F58237C41C996718008BBC63 /* WMTextField.m */; };
@@ -69,6 +75,18 @@
 		F53ACF5B1C9BB757008507C5 /* WMOtherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMOtherCell.h; sourceTree = "<group>"; };
 		F53ACF5C1C9BB757008507C5 /* WMOtherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMOtherCell.m; sourceTree = "<group>"; };
 		F53ACF5E1C9BC0A8008507C5 /* WMOtherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMOtherCell.xib; sourceTree = "<group>"; };
+		F53ACF601C9BDFA5008507C5 /* WMTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTitleButton.h; sourceTree = "<group>"; };
+		F53ACF611C9BDFA5008507C5 /* WMTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTitleButton.m; sourceTree = "<group>"; };
+		F53ACF631C9BF27D008507C5 /* WMAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMAllViewController.h; sourceTree = "<group>"; };
+		F53ACF641C9BF27D008507C5 /* WMAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMAllViewController.m; sourceTree = "<group>"; };
+		F53ACF661C9BF2AF008507C5 /* WMVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMVideoViewController.h; sourceTree = "<group>"; };
+		F53ACF671C9BF2AF008507C5 /* WMVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMVideoViewController.m; sourceTree = "<group>"; };
+		F53ACF691C9BF39C008507C5 /* WMVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMVoiceViewController.h; sourceTree = "<group>"; };
+		F53ACF6A1C9BF39C008507C5 /* WMVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMVoiceViewController.m; sourceTree = "<group>"; };
+		F53ACF6C1C9BF3A7008507C5 /* WMPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMPictureViewController.h; sourceTree = "<group>"; };
+		F53ACF6D1C9BF3A7008507C5 /* WMPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPictureViewController.m; sourceTree = "<group>"; };
+		F53ACF6F1C9BF3B1008507C5 /* WMWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMWordViewController.h; sourceTree = "<group>"; };
+		F53ACF701C9BF3B1008507C5 /* WMWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMWordViewController.m; sourceTree = "<group>"; };
 		F54DB89A1C9AAF0D00183488 /* WMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMWebViewController.h; sourceTree = "<group>"; };
 		F54DB89B1C9AAF0D00183488 /* WMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMWebViewController.m; sourceTree = "<group>"; };
 		F54DB89C1C9AAF0D00183488 /* WMWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMWebViewController.xib; sourceTree = "<group>"; };
@@ -197,6 +215,16 @@
 			children = (
 				F58480001C980755005D191F /* WMEssenceViewController.h */,
 				F58480011C980755005D191F /* WMEssenceViewController.m */,
+				F53ACF631C9BF27D008507C5 /* WMAllViewController.h */,
+				F53ACF641C9BF27D008507C5 /* WMAllViewController.m */,
+				F53ACF661C9BF2AF008507C5 /* WMVideoViewController.h */,
+				F53ACF671C9BF2AF008507C5 /* WMVideoViewController.m */,
+				F53ACF691C9BF39C008507C5 /* WMVoiceViewController.h */,
+				F53ACF6A1C9BF39C008507C5 /* WMVoiceViewController.m */,
+				F53ACF6C1C9BF3A7008507C5 /* WMPictureViewController.h */,
+				F53ACF6D1C9BF3A7008507C5 /* WMPictureViewController.m */,
+				F53ACF6F1C9BF3B1008507C5 /* WMWordViewController.h */,
+				F53ACF701C9BF3B1008507C5 /* WMWordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,6 +239,8 @@
 		F5847FE01C980728005D191F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F53ACF601C9BDFA5008507C5 /* WMTitleButton.h */,
+				F53ACF611C9BDFA5008507C5 /* WMTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -634,6 +664,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53ACF651C9BF27D008507C5 /* WMAllViewController.m in Sources */,
 				F58480111C98133E005D191F /* UIBarButtonItem+WMExtension.m in Sources */,
 				F5B144511C991C5500019A73 /* WMQuickLoginButton.m in Sources */,
 				F58480051C980770005D191F /* WMFollowViewController.m in Sources */,
@@ -644,20 +675,25 @@
 				F5A4C60B1C9A727600788411 /* WMMeSquare.m in Sources */,
 				F58480141C982262005D191F /* WMSettingViewController.m in Sources */,
 				F58237C51C996718008BBC63 /* WMTextField.m in Sources */,
+				F53ACF6E1C9BF3A7008507C5 /* WMPictureViewController.m in Sources */,
 				F54DB89D1C9AAF0D00183488 /* WMWebViewController.m in Sources */,
 				F58480081C980787005D191F /* WMMeViewController.m in Sources */,
 				F5A4C6141C9A9E3F00788411 /* WMMeSquareButton.m in Sources */,
 				F5847FFD1C980728005D191F /* WMTabBarController.m in Sources */,
+				F53ACF711C9BF3B1008507C5 /* WMWordViewController.m in Sources */,
 				F5A4C60E1C9A72A100788411 /* WMMeCell.m in Sources */,
 				F5B144571C99401600019A73 /* WMThreeLogin.m in Sources */,
 				F5A4C6111C9A72CE00788411 /* WMMeFooterView.m in Sources */,
+				F53ACF621C9BDFA5008507C5 /* WMTitleButton.m in Sources */,
 				F5847FFE1C980728005D191F /* main.m in Sources */,
+				F53ACF681C9BF2AF008507C5 /* WMVideoViewController.m in Sources */,
 				F584800E1C980C1C005D191F /* WMNavigationController.m in Sources */,
 				F58480171C984748005D191F /* WMRecommenViewController.m in Sources */,
 				F53ACF5A1C9BA210008507C5 /* WMClearCell.m in Sources */,
 				F5B1444E1C99029300019A73 /* WMLoginRegisterViewController.m in Sources */,
 				F584800B1C980795005D191F /* WMNewViewController.m in Sources */,
 				F53ACF571C9B9F61008507C5 /* NSString+WMExtence_FileSize.m in Sources */,
+				F53ACF6B1C9BF39C008507C5 /* WMVoiceViewController.m in Sources */,
 				F5B144541C99396D00019A73 /* WMLoginRegister.m in Sources */,
 				F5847FFB1C980728005D191F /* UIView+WMExtension.m in Sources */,
 			);

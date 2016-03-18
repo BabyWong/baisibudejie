@@ -18,8 +18,9 @@
     [super viewDidLoad];
     
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
-    
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" selectImage:@"MainTagSubIconClick" targe:self action:@selector(menuClick)];
+    
+    self.tableView.backgroundColor = WMCommonBgColor;
     
 }
 
