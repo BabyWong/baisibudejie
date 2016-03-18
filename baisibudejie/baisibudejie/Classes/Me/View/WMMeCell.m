@@ -13,7 +13,7 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     
     
-    if (self == [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
         self.textLabel.textColor = [UIColor darkGrayColor];
         self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;

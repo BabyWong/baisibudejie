@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CFB5B93CC05F6028AD5315FC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13880DE926FEE5593765F18B /* libPods.a */; };
+		F53ACF571C9B9F61008507C5 /* NSString+WMExtence_FileSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F53ACF561C9B9F61008507C5 /* NSString+WMExtence_FileSize.m */; };
+		F53ACF5A1C9BA210008507C5 /* WMClearCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F53ACF591C9BA210008507C5 /* WMClearCell.m */; };
+		F53ACF5D1C9BB757008507C5 /* WMOtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F53ACF5C1C9BB757008507C5 /* WMOtherCell.m */; };
+		F53ACF5F1C9BC0A8008507C5 /* WMOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53ACF5E1C9BC0A8008507C5 /* WMOtherCell.xib */; };
 		F54DB89D1C9AAF0D00183488 /* WMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54DB89B1C9AAF0D00183488 /* WMWebViewController.m */; };
 		F54DB89E1C9AAF0D00183488 /* WMWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54DB89C1C9AAF0D00183488 /* WMWebViewController.xib */; };
 		F58237C51C996718008BBC63 /* WMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F58237C41C996718008BBC63 /* WMTextField.m */; };
@@ -58,6 +62,13 @@
 		13880DE926FEE5593765F18B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		31D6532CA4264B5F470C11D7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		432A7B7845171E8D6ED8872C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F53ACF551C9B9F61008507C5 /* NSString+WMExtence_FileSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WMExtence_FileSize.h"; sourceTree = "<group>"; };
+		F53ACF561C9B9F61008507C5 /* NSString+WMExtence_FileSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WMExtence_FileSize.m"; sourceTree = "<group>"; };
+		F53ACF581C9BA210008507C5 /* WMClearCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMClearCell.h; sourceTree = "<group>"; };
+		F53ACF591C9BA210008507C5 /* WMClearCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMClearCell.m; sourceTree = "<group>"; };
+		F53ACF5B1C9BB757008507C5 /* WMOtherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMOtherCell.h; sourceTree = "<group>"; };
+		F53ACF5C1C9BB757008507C5 /* WMOtherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMOtherCell.m; sourceTree = "<group>"; };
+		F53ACF5E1C9BC0A8008507C5 /* WMOtherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMOtherCell.xib; sourceTree = "<group>"; };
 		F54DB89A1C9AAF0D00183488 /* WMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMWebViewController.h; sourceTree = "<group>"; };
 		F54DB89B1C9AAF0D00183488 /* WMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMWebViewController.m; sourceTree = "<group>"; };
 		F54DB89C1C9AAF0D00183488 /* WMWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMWebViewController.xib; sourceTree = "<group>"; };
@@ -289,6 +300,11 @@
 				F5A4C6101C9A72CE00788411 /* WMMeFooterView.m */,
 				F5A4C6121C9A9E3F00788411 /* WMMeSquareButton.h */,
 				F5A4C6131C9A9E3F00788411 /* WMMeSquareButton.m */,
+				F53ACF581C9BA210008507C5 /* WMClearCell.h */,
+				F53ACF591C9BA210008507C5 /* WMClearCell.m */,
+				F53ACF5B1C9BB757008507C5 /* WMOtherCell.h */,
+				F53ACF5C1C9BB757008507C5 /* WMOtherCell.m */,
+				F53ACF5E1C9BC0A8008507C5 /* WMOtherCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -345,6 +361,8 @@
 				F5847FF01C980728005D191F /* UIView+WMExtension.m */,
 				F584800F1C98133E005D191F /* UIBarButtonItem+WMExtension.h */,
 				F58480101C98133E005D191F /* UIBarButtonItem+WMExtension.m */,
+				F53ACF551C9B9F61008507C5 /* NSString+WMExtence_FileSize.h */,
+				F53ACF561C9B9F61008507C5 /* NSString+WMExtence_FileSize.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -541,6 +559,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53ACF5F1C9BC0A8008507C5 /* WMOtherCell.xib in Resources */,
 				F5C5673B1C97DF5300D76F32 /* Assets.xcassets in Resources */,
 				F54DB89E1C9AAF0D00183488 /* WMWebViewController.xib in Resources */,
 			);
@@ -619,6 +638,7 @@
 				F5B144511C991C5500019A73 /* WMQuickLoginButton.m in Sources */,
 				F58480051C980770005D191F /* WMFollowViewController.m in Sources */,
 				F5847FFC1C980728005D191F /* AppDelegate.m in Sources */,
+				F53ACF5D1C9BB757008507C5 /* WMOtherCell.m in Sources */,
 				F58480021C980755005D191F /* WMEssenceViewController.m in Sources */,
 				F5847FFF1C980728005D191F /* WMTabBar.m in Sources */,
 				F5A4C60B1C9A727600788411 /* WMMeSquare.m in Sources */,
@@ -634,8 +654,10 @@
 				F5847FFE1C980728005D191F /* main.m in Sources */,
 				F584800E1C980C1C005D191F /* WMNavigationController.m in Sources */,
 				F58480171C984748005D191F /* WMRecommenViewController.m in Sources */,
+				F53ACF5A1C9BA210008507C5 /* WMClearCell.m in Sources */,
 				F5B1444E1C99029300019A73 /* WMLoginRegisterViewController.m in Sources */,
 				F584800B1C980795005D191F /* WMNewViewController.m in Sources */,
+				F53ACF571C9B9F61008507C5 /* NSString+WMExtence_FileSize.m in Sources */,
 				F5B144541C99396D00019A73 /* WMLoginRegister.m in Sources */,
 				F5847FFB1C980728005D191F /* UIView+WMExtension.m in Sources */,
 			);
