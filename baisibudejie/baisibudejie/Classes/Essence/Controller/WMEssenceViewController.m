@@ -14,10 +14,12 @@
 #import "WMPictureViewController.h"
 #import "WMWordViewController.h"
 
-@interface WMEssenceViewController ()
+@interface WMEssenceViewController () <UIScrollViewDelegate>
 
 @property (nonatomic, strong) WMTitleButton *selectBT;
 @property (nonatomic, strong) UIView *indicatorView;
+@property (nonatomic, weak)  UIScrollView *scrollV;
+@property (nonatomic, weak) UIView *titleView;
 
 @end
 
@@ -26,12 +28,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" selectImage:@"MainTagSubIconClick" targe:self action:@selector(menuClick)];
+    [self setUpNav];
     
     self.view.backgroundColor = WMCommonBgColor;
     
-    [self setUpChildViewContrller];
+    [self setUpAddChildViewContrller];
     
     // 添加子view
     [self setUpScrolView];
@@ -39,9 +40,18 @@
     // 添加子标题
     [self setTitleView];
     
+    //
+    [self addChildView];
+    
 }
 
-- (void)setUpChildViewContrller {
+- (void)setUpNav {
+    
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" selectImage:@"MainTagSubIconClick" targe:self action:@selector(menuClick)];
+}
+
+- (void)setUpAddChildViewContrller {
     
     [self addChildViewController:[[WMAllViewController alloc] init]];
     
@@ -64,28 +74,20 @@
     scrollV.showsHorizontalScrollIndicator = NO;
     scrollV.showsVerticalScrollIndicator = NO;
     [self.view addSubview:scrollV];
-//    scrollV.backgroundColor = WMRandomColor;
+    
+    scrollV.delegate = self;
+
     
     // 把childView添加到view
     NSUInteger count = self.childViewControllers.count;
-    for (NSInteger i = 0; i < count ; i++) {
-        UITableView *childVcView = (UITableView *)self.childViewControllers[i].view;
-        childVcView.wm_x = i * self.view.wm_width;
-        childVcView.wm_y = 0;
-        childVcView.wm_height = scrollV.wm_height;
-        
-        // 内边距
-        childVcView.contentInset = UIEdgeInsetsMake(64 + 35, 0, 49, 0);
-        // 指定滚动条在scrollerView中的位置
-        childVcView.scrollIndicatorInsets = childVcView.contentInset;
-        
-        [scrollV addSubview:childVcView];
-    }
+    // 设置scrollView的可滑动区域
+    scrollV.contentSize = CGSizeMake(count * scrollV.wm_width, 0);
     
-    scrollV.contentSize = CGSizeMake(count * self.view.wm_width, 0);
+    self.scrollV = scrollV;
     
     
 }
+
 
 - (void)setTitleView {
     
@@ -94,6 +96,7 @@
     titleView.frame = CGRectMake(0, 64, self.view.wm_width, 35);
     titleView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.3];
     [self.view addSubview:titleView];
+    self.titleView = titleView;
     
     // 添加标题
     
@@ -133,6 +136,8 @@
     firstTitleBT.selected = YES;
     self.selectBT = firstTitleBT;
     
+    
+    
 }
 
 /**
@@ -146,14 +151,36 @@
     self.selectBT = button;
     
     // 指示器
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:0.2 animations:^{
        
         self.indicatorView.wm_width = button.titleLabel.wm_width;
         self.indicatorView.wm_centerX = button.wm_centerX;
         
     }];
     
-    // 跳转
+    // 让scrollview滚到对应的位置
+    CGPoint offset = self.scrollV.contentOffset;
+    offset.x = button.tag * self.scrollV.wm_width;
+    [self.scrollV setContentOffset:offset animated:YES];
+    
+}
+
+#pragma mark - 添加子控制器的view
+- (void)addChildView {
+    
+    // 子控制器的索引
+    NSUInteger index = self.scrollV.contentOffset.x / self.scrollV.wm_width;
+    UIViewController *childVc = self.childViewControllers[index];
+    
+    if ([childVc isViewLoaded]) return;
+    
+    childVc.view.frame = self.scrollV.bounds;
+    
+    
+    
+    // 添加view
+    [self.scrollV addSubview:childVc.view];
+    
     
 }
 
@@ -161,11 +188,34 @@
     WMLog(@"menu");
 }
 
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - <UIScrollViewDelegate>
+/**
+ * 在scrollView滚动动画结束时, 就会调用这个方法
+ * 前提: 使用setContentOffset:animated:或者scrollRectVisible:animated:方法让scrollView产生滚动动画
+ */
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    [self addChildView];
+}
+
+/**
+ * 在scrollView滚动动画结束时, 就会调用这个方法
+ * 前提: 人为拖拽scrollView产生的滚动动画
+ */
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    
+    NSUInteger index = scrollView.contentOffset.x / scrollView.wm_width;
+    WMTitleButton *titleBT = self.titleView.subviews[index];
+    
+    // 选择标题
+    [self clickTitleBT:titleBT];
+    
+    // 加载view
+    [self addChildView];
 }
 
 @end
