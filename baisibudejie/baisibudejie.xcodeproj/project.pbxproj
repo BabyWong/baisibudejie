@@ -20,6 +20,7 @@
 		F53ACF711C9BF3B1008507C5 /* WMWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53ACF701C9BF3B1008507C5 /* WMWordViewController.m */; };
 		F54DB89D1C9AAF0D00183488 /* WMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54DB89B1C9AAF0D00183488 /* WMWebViewController.m */; };
 		F54DB89E1C9AAF0D00183488 /* WMWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54DB89C1C9AAF0D00183488 /* WMWebViewController.xib */; };
+		F56B237E1C9D4798003B0956 /* WMTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = F56B237D1C9D4798003B0956 /* WMTopic.m */; };
 		F58237C51C996718008BBC63 /* WMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F58237C41C996718008BBC63 /* WMTextField.m */; };
 		F5847FFB1C980728005D191F /* UIView+WMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F5847FF01C980728005D191F /* UIView+WMExtension.m */; };
 		F5847FFC1C980728005D191F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5847FF31C980728005D191F /* AppDelegate.m */; };
@@ -90,6 +91,8 @@
 		F54DB89A1C9AAF0D00183488 /* WMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMWebViewController.h; sourceTree = "<group>"; };
 		F54DB89B1C9AAF0D00183488 /* WMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMWebViewController.m; sourceTree = "<group>"; };
 		F54DB89C1C9AAF0D00183488 /* WMWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMWebViewController.xib; sourceTree = "<group>"; };
+		F56B237C1C9D4798003B0956 /* WMTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTopic.h; sourceTree = "<group>"; };
+		F56B237D1C9D4798003B0956 /* WMTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTopic.m; sourceTree = "<group>"; };
 		F58237C31C996718008BBC63 /* WMTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTextField.h; sourceTree = "<group>"; };
 		F58237C41C996718008BBC63 /* WMTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTextField.m; sourceTree = "<group>"; };
 		F5847FEF1C980728005D191F /* UIView+WMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WMExtension.h"; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 		F5847FDF1C980728005D191F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F56B237C1C9D4798003B0956 /* WMTopic.h */,
+				F56B237D1C9D4798003B0956 /* WMTopic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -691,6 +696,7 @@
 				F58480171C984748005D191F /* WMRecommenViewController.m in Sources */,
 				F53ACF5A1C9BA210008507C5 /* WMClearCell.m in Sources */,
 				F5B1444E1C99029300019A73 /* WMLoginRegisterViewController.m in Sources */,
+				F56B237E1C9D4798003B0956 /* WMTopic.m in Sources */,
 				F584800B1C980795005D191F /* WMNewViewController.m in Sources */,
 				F53ACF571C9B9F61008507C5 /* NSString+WMExtence_FileSize.m in Sources */,
 				F53ACF6B1C9BF39C008507C5 /* WMVoiceViewController.m in Sources */,
@@ -819,7 +825,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = baisibudejie/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = baisibudejie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hwm.baisibudejie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -834,7 +840,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = baisibudejie/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = baisibudejie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hwm.baisibudejie;
 				PRODUCT_NAME = "$(TARGET_NAME)";

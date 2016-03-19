@@ -23,13 +23,20 @@
  */
 #ifdef DEBUG
 #define  WMLog(...) NSLog(__VA_ARGS__)
-
 #else
 #define  WMLog(...)
 #endif
 
+#import <MJExtension.h>
+#import <AFNetworking.h>
+//#import <SDImageCache.h>
+#import <UIImageView+WebCache.h>
+
 #define WMLogFunc  WMLog(@"%s", __func__);
 
+#define CommenURL @"http://api.budejie.com/api/api_open.php"
+
+#define WMWriteToPlist(data, fileName) [data writeToFile: [NSString stringWithFormat:@"/Users/hwm/Desktop/%@.plist", fileName] atomically:YES];
 
 /*** 颜色 ***/
 #define WMColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
