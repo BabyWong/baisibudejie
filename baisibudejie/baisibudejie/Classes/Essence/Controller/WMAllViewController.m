@@ -8,10 +8,16 @@
 
 #import "WMAllViewController.h"
 #import "WMTopic.h"
+#import "WMRefreshHeader.h"
+#import "WMRefreshFooter.h"
 
 @interface WMAllViewController ()
 
-@property (nonatomic, strong) NSArray<WMTopic *> *topic; // 泛型
+@property (nonatomic, strong) NSMutableArray<WMTopic *> *topic; // 泛型
+/** 下拉刷新的提示文字 */
+@property (nonatomic, weak) UILabel *label;
+/** maxtime : 用来加载下一页数据 */
+@property (nonatomic, copy) NSString *maxtime;
 
 @end
 
@@ -23,19 +29,26 @@
     self.tableView.contentInset = UIEdgeInsetsMake(64 + 35, 0, 49, 0);
 //    self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
     
-    [self refresh];
+//    [self refresh];
+    [self setUpRefresh];
     
 }
 
-- (void)refresh {
+- (void)setUpRefresh {
     
-    UIRefreshControl *refrechC = [[UIRefreshControl alloc] init];
-    [refrechC addTarget:self action:@selector(loadNews:) forControlEvents:UIControlEventValueChanged];
-    [self.tableView addSubview:refrechC];
+    self.tableView.mj_header = [WMRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNews)];
+    self.tableView.mj_footer = [WMRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
+    
     
 }
 
-- (void)loadNews:(UIRefreshControl *)refreshC {
+//- (void)refresh {
+//    UIRefreshControl *refrechC = [[UIRefreshControl alloc] init];
+//    [refrechC addTarget:self action:@selector(loadNews:) forControlEvents:UIControlEventValueChanged];
+//    [self.tableView addSubview:refrechC];
+//}
+
+- (void)loadNews {
     
     // 加载数据
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
@@ -47,6 +60,9 @@
       
 //        [responseObject writeToFile:@"/Users/hwm/Desktop/topic.plist" atomically:YES];
         
+        // 存储maxtime(方便用来加载下一页数据)
+        self.maxtime = responseObject[@"info"][@"maxtime"];
+        // 字典数组 -> 模型数组
         self.topic = [WMTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
      
                       
@@ -54,7 +70,7 @@
         [self.tableView reloadData];
         
         // 让[刷新控件]结束刷新
-        [refreshC endRefreshing];
+        [self.tableView.mj_header endRefreshing];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
@@ -62,11 +78,40 @@
         WMLog(@"请求失败");
         
         // 让[刷新控件]结束刷新
-        [refreshC endRefreshing];
+        [self.tableView.mj_header endRefreshing];
      
         
     }];
 
+    
+}
+
+- (void)loadMoreTopics {
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"a"] = @"list";
+    params[@"c"] = @"data";
+    params[@"maxtime"] = self.maxtime;
+    
+    [[AFHTTPSessionManager manager] GET:CommenURL parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        self.maxtime = responseObject[@"info"][@"maxtime"];
+        
+        // 字典数组 -> 模型数组
+        NSArray<WMTopic *> *moreTopic = [WMTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        [self.topic addObjectsFromArray:moreTopic];
+        
+        [self.tableView reloadData];
+        
+        [self.tableView.mj_footer endRefreshing];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        WMLog(@"请求失败 - %@", error);
+        
+        [self.tableView.mj_footer endRefreshing];
+    }];
+    
     
 }
 

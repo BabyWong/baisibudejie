@@ -21,6 +21,8 @@
 		F54DB89D1C9AAF0D00183488 /* WMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54DB89B1C9AAF0D00183488 /* WMWebViewController.m */; };
 		F54DB89E1C9AAF0D00183488 /* WMWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54DB89C1C9AAF0D00183488 /* WMWebViewController.xib */; };
 		F56B237E1C9D4798003B0956 /* WMTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = F56B237D1C9D4798003B0956 /* WMTopic.m */; };
+		F56B23811C9D9EF3003B0956 /* WMRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F56B23801C9D9EF3003B0956 /* WMRefreshHeader.m */; };
+		F56B23841C9D9F1D003B0956 /* WMRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F56B23831C9D9F1D003B0956 /* WMRefreshFooter.m */; };
 		F58237C51C996718008BBC63 /* WMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F58237C41C996718008BBC63 /* WMTextField.m */; };
 		F5847FFB1C980728005D191F /* UIView+WMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F5847FF01C980728005D191F /* UIView+WMExtension.m */; };
 		F5847FFC1C980728005D191F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5847FF31C980728005D191F /* AppDelegate.m */; };
@@ -93,6 +95,10 @@
 		F54DB89C1C9AAF0D00183488 /* WMWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMWebViewController.xib; sourceTree = "<group>"; };
 		F56B237C1C9D4798003B0956 /* WMTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTopic.h; sourceTree = "<group>"; };
 		F56B237D1C9D4798003B0956 /* WMTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTopic.m; sourceTree = "<group>"; };
+		F56B237F1C9D9EF3003B0956 /* WMRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRefreshHeader.h; sourceTree = "<group>"; };
+		F56B23801C9D9EF3003B0956 /* WMRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRefreshHeader.m; sourceTree = "<group>"; };
+		F56B23821C9D9F1D003B0956 /* WMRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRefreshFooter.h; sourceTree = "<group>"; };
+		F56B23831C9D9F1D003B0956 /* WMRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRefreshFooter.m; sourceTree = "<group>"; };
 		F58237C31C996718008BBC63 /* WMTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTextField.h; sourceTree = "<group>"; };
 		F58237C41C996718008BBC63 /* WMTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTextField.m; sourceTree = "<group>"; };
 		F5847FEF1C980728005D191F /* UIView+WMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WMExtension.h"; sourceTree = "<group>"; };
@@ -422,6 +428,10 @@
 				F5847FFA1C980728005D191F /* WMTabBar.m */,
 				F5B1444F1C991C5500019A73 /* WMQuickLoginButton.h */,
 				F5B144501C991C5500019A73 /* WMQuickLoginButton.m */,
+				F56B237F1C9D9EF3003B0956 /* WMRefreshHeader.h */,
+				F56B23801C9D9EF3003B0956 /* WMRefreshHeader.m */,
+				F56B23821C9D9F1D003B0956 /* WMRefreshFooter.h */,
+				F56B23831C9D9F1D003B0956 /* WMRefreshFooter.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -683,11 +693,13 @@
 				F53ACF6E1C9BF3A7008507C5 /* WMPictureViewController.m in Sources */,
 				F54DB89D1C9AAF0D00183488 /* WMWebViewController.m in Sources */,
 				F58480081C980787005D191F /* WMMeViewController.m in Sources */,
+				F56B23811C9D9EF3003B0956 /* WMRefreshHeader.m in Sources */,
 				F5A4C6141C9A9E3F00788411 /* WMMeSquareButton.m in Sources */,
 				F5847FFD1C980728005D191F /* WMTabBarController.m in Sources */,
 				F53ACF711C9BF3B1008507C5 /* WMWordViewController.m in Sources */,
 				F5A4C60E1C9A72A100788411 /* WMMeCell.m in Sources */,
 				F5B144571C99401600019A73 /* WMThreeLogin.m in Sources */,
+				F56B23841C9D9F1D003B0956 /* WMRefreshFooter.m in Sources */,
 				F5A4C6111C9A72CE00788411 /* WMMeFooterView.m in Sources */,
 				F53ACF621C9BDFA5008507C5 /* WMTitleButton.m in Sources */,
 				F5847FFE1C980728005D191F /* main.m in Sources */,
