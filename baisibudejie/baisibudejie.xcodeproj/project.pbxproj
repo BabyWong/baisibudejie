@@ -44,6 +44,9 @@
 		F58480111C98133E005D191F /* UIBarButtonItem+WMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F58480101C98133E005D191F /* UIBarButtonItem+WMExtension.m */; };
 		F58480141C982262005D191F /* WMSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58480131C982262005D191F /* WMSettingViewController.m */; };
 		F58480171C984748005D191F /* WMRecommenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58480161C984748005D191F /* WMRecommenViewController.m */; };
+		F58DB6A31CA27FF900493D51 /* WMCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F58DB6A11CA27FF900493D51 /* WMCommentCell.m */; };
+		F58DB6A41CA27FF900493D51 /* WMCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58DB6A21CA27FF900493D51 /* WMCommentCell.xib */; };
+		F58DB6A71CA281C400493D51 /* WMCommentSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58DB6A61CA281C400493D51 /* WMCommentSectionHeaderView.m */; };
 		F5A494E81CA0F8880064BACF /* WMTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A494E71CA0F8880064BACF /* WMTopicVoiceView.m */; };
 		F5A494ED1CA0FC4D0064BACF /* WMTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A494EC1CA0FC4D0064BACF /* WMTopicPictureView.m */; };
 		F5A494F01CA0FC650064BACF /* WMTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A494EF1CA0FC650064BACF /* WMTopicVideoView.m */; };
@@ -159,6 +162,11 @@
 		F58480131C982262005D191F /* WMSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSettingViewController.m; sourceTree = "<group>"; };
 		F58480151C984748005D191F /* WMRecommenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRecommenViewController.h; sourceTree = "<group>"; };
 		F58480161C984748005D191F /* WMRecommenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRecommenViewController.m; sourceTree = "<group>"; };
+		F58DB6A01CA27FF900493D51 /* WMCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCommentCell.h; sourceTree = "<group>"; };
+		F58DB6A11CA27FF900493D51 /* WMCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCommentCell.m; sourceTree = "<group>"; };
+		F58DB6A21CA27FF900493D51 /* WMCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMCommentCell.xib; sourceTree = "<group>"; };
+		F58DB6A51CA281C400493D51 /* WMCommentSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCommentSectionHeaderView.h; sourceTree = "<group>"; };
+		F58DB6A61CA281C400493D51 /* WMCommentSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCommentSectionHeaderView.m; sourceTree = "<group>"; };
 		F5A494E61CA0F8880064BACF /* WMTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTopicVoiceView.h; sourceTree = "<group>"; };
 		F5A494E71CA0F8880064BACF /* WMTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTopicVoiceView.m; sourceTree = "<group>"; };
 		F5A494EB1CA0FC4D0064BACF /* WMTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTopicPictureView.h; sourceTree = "<group>"; };
@@ -313,6 +321,11 @@
 		F53B14291CA25A4300A6A2DD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F58DB6A01CA27FF900493D51 /* WMCommentCell.h */,
+				F58DB6A11CA27FF900493D51 /* WMCommentCell.m */,
+				F58DB6A21CA27FF900493D51 /* WMCommentCell.xib */,
+				F58DB6A51CA281C400493D51 /* WMCommentSectionHeaderView.h */,
+				F58DB6A61CA281C400493D51 /* WMCommentSectionHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -757,6 +770,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F53ACF5F1C9BC0A8008507C5 /* WMOtherCell.xib in Resources */,
+				F58DB6A41CA27FF900493D51 /* WMCommentCell.xib in Resources */,
 				F53B142E1CA2672300A6A2DD /* WMCommentViewController.xib in Resources */,
 				F5A495021CA1639B0064BACF /* WMTopicVoiceView.xib in Resources */,
 				F5A494F21CA0FC710064BACF /* WMTopicPictureView.xib in Resources */,
@@ -865,6 +879,8 @@
 				F5B6045E1CA04CD50044994F /* WMUser.m in Sources */,
 				F5A4C60E1C9A72A100788411 /* WMMeCell.m in Sources */,
 				F5A494E81CA0F8880064BACF /* WMTopicVoiceView.m in Sources */,
+				F58DB6A31CA27FF900493D51 /* WMCommentCell.m in Sources */,
+				F58DB6A71CA281C400493D51 /* WMCommentSectionHeaderView.m in Sources */,
 				F5B144571C99401600019A73 /* WMThreeLogin.m in Sources */,
 				F56B23841C9D9F1D003B0956 /* WMRefreshFooter.m in Sources */,
 				F5A494F01CA0FC650064BACF /* WMTopicVideoView.m in Sources */,

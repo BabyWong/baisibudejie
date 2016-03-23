@@ -27,7 +27,8 @@ typedef NS_ENUM(NSUInteger, WMTopicType) {
 @interface WMTopic : NSObject
 
 
-
+/** 用户的id */
+@property (nonatomic, copy) NSString *ID;
 /** 用户的名字 */
 @property (nonatomic, copy) NSString *name;
 /** 用户的头像 */
