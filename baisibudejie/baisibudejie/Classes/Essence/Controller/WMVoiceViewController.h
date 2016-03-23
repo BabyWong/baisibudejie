@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WMVoiceViewController : UITableViewController
+@interface WMVoiceViewController : WMTopicViewController
 
 @end

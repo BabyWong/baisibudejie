@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WMEssenceViewController.h"
 
-@interface WMNewViewController : UITableViewController
+@interface WMNewViewController : WMEssenceViewController
 
 @end

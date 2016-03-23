@@ -9,10 +9,12 @@
 #import "WMEssenceViewController.h"
 #import "WMTitleButton.h"
 #import "WMAllViewController.h"
-#import "WMVideoViewController.h"
-#import "WMVoiceViewController.h" 
 #import "WMPictureViewController.h"
+#import "WMVideoViewController.h"
 #import "WMWordViewController.h"
+#import "WMVoiceViewController.h"
+
+
 
 @interface WMEssenceViewController () <UIScrollViewDelegate>
 
@@ -53,15 +55,25 @@
 
 - (void)setUpAddChildViewContrller {
     
-    [self addChildViewController:[[WMAllViewController alloc] init]];
+    WMAllViewController *all = [[WMAllViewController alloc] init];
+//    all.type = WMTopicTypeAll;
+    [self addChildViewController:all];
     
-    [self addChildViewController:[[WMVideoViewController alloc] init]];
+    WMVideoViewController *video = [[WMVideoViewController alloc] init];
+//    video.type = WMTopicTypeVideo;
+    [self addChildViewController:video];
     
-    [self addChildViewController:[[WMVoiceViewController alloc] init]];
+    WMVoiceViewController *voice = [[WMVoiceViewController alloc] init];
+//    voice.type = WMTopicTypeVoice;
+    [self addChildViewController:voice];
     
-    [self addChildViewController:[[WMPictureViewController alloc] init]];
+    WMPictureViewController *picture = [[WMPictureViewController alloc] init];
+//    picture.type = WMTopicTypePicture;
+    [self addChildViewController:picture];
 
-    [self addChildViewController:[[WMWordViewController alloc] init]];
+    WMWordViewController *word = [[WMWordViewController alloc] init];
+//    word.type = WMTopicTypeWord;
+    [self addChildViewController:word];
 }
 
 - (void)setUpScrolView {

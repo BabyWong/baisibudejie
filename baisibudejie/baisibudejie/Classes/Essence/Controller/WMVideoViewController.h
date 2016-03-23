@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WMVideoViewController : UITableViewController
+@interface WMVideoViewController : WMTopicViewController
 
 @end

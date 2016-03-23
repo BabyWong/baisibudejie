@@ -20,4 +20,6 @@
 @property (nonatomic, assign) CGFloat wm_right;
 @property (nonatomic, assign) CGFloat wm_bottom;
 
++ (instancetype)viewFromXib;
+
 @end

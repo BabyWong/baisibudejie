@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WMWordViewController : UITableViewController
+@interface WMWordViewController : WMTopicViewController
 
 @end

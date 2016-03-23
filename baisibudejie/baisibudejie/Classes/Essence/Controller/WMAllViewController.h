@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WMAllViewController : UITableViewController
+
+@interface WMAllViewController : WMTopicViewController
+
+
 
 @end
