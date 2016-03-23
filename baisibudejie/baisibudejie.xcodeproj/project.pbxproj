@@ -19,6 +19,8 @@
 		F53B14201CA19F2400A6A2DD /* WMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F53B141F1CA19F2400A6A2DD /* WMExtension.m */; };
 		F53B14241CA2344C00A6A2DD /* WMSeeBigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53B14221CA2344C00A6A2DD /* WMSeeBigViewController.m */; };
 		F53B14251CA2344C00A6A2DD /* WMSeeBigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53B14231CA2344C00A6A2DD /* WMSeeBigViewController.xib */; };
+		F53B142D1CA2672300A6A2DD /* WMCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53B142B1CA2672300A6A2DD /* WMCommentViewController.m */; };
+		F53B142E1CA2672300A6A2DD /* WMCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53B142C1CA2672300A6A2DD /* WMCommentViewController.xib */; };
 		F54DB89D1C9AAF0D00183488 /* WMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54DB89B1C9AAF0D00183488 /* WMWebViewController.m */; };
 		F54DB89E1C9AAF0D00183488 /* WMWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54DB89C1C9AAF0D00183488 /* WMWebViewController.xib */; };
 		F56B237E1C9D4798003B0956 /* WMTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = F56B237D1C9D4798003B0956 /* WMTopic.m */; };
@@ -108,6 +110,9 @@
 		F53B14211CA2344C00A6A2DD /* WMSeeBigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSeeBigViewController.h; sourceTree = "<group>"; };
 		F53B14221CA2344C00A6A2DD /* WMSeeBigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSeeBigViewController.m; sourceTree = "<group>"; };
 		F53B14231CA2344C00A6A2DD /* WMSeeBigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMSeeBigViewController.xib; sourceTree = "<group>"; };
+		F53B142A1CA2672300A6A2DD /* WMCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCommentViewController.h; sourceTree = "<group>"; };
+		F53B142B1CA2672300A6A2DD /* WMCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCommentViewController.m; sourceTree = "<group>"; };
+		F53B142C1CA2672300A6A2DD /* WMCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMCommentViewController.xib; sourceTree = "<group>"; };
 		F54DB89A1C9AAF0D00183488 /* WMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMWebViewController.h; sourceTree = "<group>"; };
 		F54DB89B1C9AAF0D00183488 /* WMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMWebViewController.m; sourceTree = "<group>"; };
 		F54DB89C1C9AAF0D00183488 /* WMWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMWebViewController.xib; sourceTree = "<group>"; };
@@ -278,9 +283,44 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F53B14261CA25A4300A6A2DD /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				F53B14271CA25A4300A6A2DD /* Controller */,
+				F53B14281CA25A4300A6A2DD /* Model */,
+				F53B14291CA25A4300A6A2DD /* View */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		F53B14271CA25A4300A6A2DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F53B142A1CA2672300A6A2DD /* WMCommentViewController.h */,
+				F53B142B1CA2672300A6A2DD /* WMCommentViewController.m */,
+				F53B142C1CA2672300A6A2DD /* WMCommentViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F53B14281CA25A4300A6A2DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F53B14291CA25A4300A6A2DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F5847FDC1C980728005D191F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F53B14261CA25A4300A6A2DD /* Comment */,
 				F53B14131CA1789B00A6A2DD /* New */,
 				F5847FDD1C980728005D191F /* Essence */,
 				F5847FE11C980728005D191F /* Follow */,
@@ -717,6 +757,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F53ACF5F1C9BC0A8008507C5 /* WMOtherCell.xib in Resources */,
+				F53B142E1CA2672300A6A2DD /* WMCommentViewController.xib in Resources */,
 				F5A495021CA1639B0064BACF /* WMTopicVoiceView.xib in Resources */,
 				F5A494F21CA0FC710064BACF /* WMTopicPictureView.xib in Resources */,
 				F5C5673B1C97DF5300D76F32 /* Assets.xcassets in Resources */,
@@ -806,6 +847,7 @@
 				F5847FFC1C980728005D191F /* AppDelegate.m in Sources */,
 				F53ACF5D1C9BB757008507C5 /* WMOtherCell.m in Sources */,
 				F58480021C980755005D191F /* WMEssenceViewController.m in Sources */,
+				F53B142D1CA2672300A6A2DD /* WMCommentViewController.m in Sources */,
 				F5A494ED1CA0FC4D0064BACF /* WMTopicPictureView.m in Sources */,
 				F5B604611CA04CE00044994F /* WMComment.m in Sources */,
 				F5847FFF1C980728005D191F /* WMTabBar.m in Sources */,

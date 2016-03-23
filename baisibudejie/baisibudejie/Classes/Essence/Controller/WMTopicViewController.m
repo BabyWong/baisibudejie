@@ -13,6 +13,7 @@
 #import "WMAFHTTPSessionManager.h"
 #import "WMTopicCell.h"
 #import "WMNewViewController.h"
+#import "WMCommentViewController.h"
 
 @interface WMTopicViewController ()
 
@@ -185,6 +186,12 @@ static NSString *topicID = @"topic";
     
     return cell;
     
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    WMCommentViewController *commentController = [[WMCommentViewController alloc] init];
+    commentController.topic = self.topic;
+    [self.navigationController pushViewController:commentController animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
