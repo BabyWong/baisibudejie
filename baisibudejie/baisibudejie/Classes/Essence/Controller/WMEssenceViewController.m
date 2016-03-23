@@ -13,6 +13,7 @@
 #import "WMVideoViewController.h"
 #import "WMWordViewController.h"
 #import "WMVoiceViewController.h"
+#import "WMRecommendTagViewController.h"
 
 
 
@@ -197,7 +198,9 @@
 }
 
 - (void)menuClick {
-    WMLog(@"menu");
+    
+    WMRecommendTagViewController *RecommendTag = [[WMRecommendTagViewController alloc] init];
+    [self.navigationController pushViewController:RecommendTag animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

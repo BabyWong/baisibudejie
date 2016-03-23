@@ -17,6 +17,9 @@
 
 #import "UIView+WMExtension.h"
 #import "UIBarButtonItem+WMExtension.h"
+#import "UIImage+WMExtension.h"
+#import "UIImageView+WMExtension.h"
+#import "WMConst.h"
 
 /**
  *  输出日志

@@ -22,8 +22,27 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     WMTabBarController *vc = [[WMTabBarController alloc] init];
     self.window.rootViewController = vc;
+    
+    
     [self.window makeKeyAndVisible];
     
+    
+//    // 设置友盟AppKey
+//    [UMSocialData setAppKey:@"56a58cefe0f55a7471000fe3"];
+//    
+//    //设置分享到QQ/Qzone的应用Id，和分享url 链接
+//    [UMSocialQQHandler setQQWithAppId:@"1105015310" appKey:@"3amibiEbZdpJR2SN" url:@"http://www.yg-technology.com"];
+//    
+//    //设置支持没有客户端情况下使用SSO授权
+//    [UMSocialQQHandler setSupportWebView:YES];
+//    
+//    //设置微信AppId、appSecret，分享url
+//    [UMSocialWechatHandler setWXAppId:@"wxcbeaebfd08a63b4f" appSecret:@"4f50be76dce1cb893a4951b694312c19" url:@"http://www.yg-technology.com"];
+//    
+//    //打开新浪微博的SSO开关设置新浪微博回调地址,这里必须要和在新浪微博后台设置的回调地址一致。
+//    [UMSocialSinaSSOHandler openNewSinaSSOWithAppKey:@"3921700954" secret:@"04b48b094faeb16683c32669824ebdad"
+//                                         RedirectURL:@"http://www.yg-technology.com"];
+//    
     return YES;
 }
 

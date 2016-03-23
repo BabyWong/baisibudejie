@@ -11,7 +11,7 @@
 @interface WMCommentViewController : UIViewController
 
 /* 模型数据 */
-@property (weak, nonatomic) WMTopic *topic;
+@property (strong, nonatomic) WMTopic *topic;
 
 
 @end

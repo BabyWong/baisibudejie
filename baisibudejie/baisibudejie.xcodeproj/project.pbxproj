@@ -47,6 +47,13 @@
 		F58DB6A31CA27FF900493D51 /* WMCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F58DB6A11CA27FF900493D51 /* WMCommentCell.m */; };
 		F58DB6A41CA27FF900493D51 /* WMCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58DB6A21CA27FF900493D51 /* WMCommentCell.xib */; };
 		F58DB6A71CA281C400493D51 /* WMCommentSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58DB6A61CA281C400493D51 /* WMCommentSectionHeaderView.m */; };
+		F58DB7B61CA2D8E400493D51 /* UIImageView+WMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F58DB7B51CA2D8E400493D51 /* UIImageView+WMExtension.m */; };
+		F58DB7B91CA2D93600493D51 /* UIImage+WMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F58DB7B81CA2D93600493D51 /* UIImage+WMExtension.m */; };
+		F58DB7BC1CA2DA7D00493D51 /* WMConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F58DB7BB1CA2DA7D00493D51 /* WMConst.m */; };
+		F58DB7C01CA2E87D00493D51 /* WMRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F58DB7BE1CA2E87D00493D51 /* WMRecommendTagCell.m */; };
+		F58DB7C11CA2E87D00493D51 /* WMRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58DB7BF1CA2E87D00493D51 /* WMRecommendTagCell.xib */; };
+		F58DB7C41CA2E93800493D51 /* WMRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = F58DB7C31CA2E93800493D51 /* WMRecommendTag.m */; };
+		F58DB7C71CA2EB1500493D51 /* WMRecommendTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58DB7C61CA2EB1500493D51 /* WMRecommendTagViewController.m */; };
 		F5A494E81CA0F8880064BACF /* WMTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A494E71CA0F8880064BACF /* WMTopicVoiceView.m */; };
 		F5A494ED1CA0FC4D0064BACF /* WMTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A494EC1CA0FC4D0064BACF /* WMTopicPictureView.m */; };
 		F5A494F01CA0FC650064BACF /* WMTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A494EF1CA0FC650064BACF /* WMTopicVideoView.m */; };
@@ -152,8 +159,6 @@
 		F58480041C980770005D191F /* WMFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMFollowViewController.m; sourceTree = "<group>"; };
 		F58480061C980787005D191F /* WMMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMeViewController.h; sourceTree = "<group>"; };
 		F58480071C980787005D191F /* WMMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMeViewController.m; sourceTree = "<group>"; };
-		F58480091C980795005D191F /* WMNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMNewViewController.h; sourceTree = "<group>"; };
-		F584800A1C980795005D191F /* WMNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMNewViewController.m; sourceTree = "<group>"; };
 		F584800C1C980C1C005D191F /* WMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMNavigationController.h; sourceTree = "<group>"; };
 		F584800D1C980C1C005D191F /* WMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMNavigationController.m; sourceTree = "<group>"; };
 		F584800F1C98133E005D191F /* UIBarButtonItem+WMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WMExtension.h"; sourceTree = "<group>"; };
@@ -167,6 +172,19 @@
 		F58DB6A21CA27FF900493D51 /* WMCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMCommentCell.xib; sourceTree = "<group>"; };
 		F58DB6A51CA281C400493D51 /* WMCommentSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMCommentSectionHeaderView.h; sourceTree = "<group>"; };
 		F58DB6A61CA281C400493D51 /* WMCommentSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMCommentSectionHeaderView.m; sourceTree = "<group>"; };
+		F58DB7B41CA2D8E400493D51 /* UIImageView+WMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WMExtension.h"; sourceTree = "<group>"; };
+		F58DB7B51CA2D8E400493D51 /* UIImageView+WMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WMExtension.m"; sourceTree = "<group>"; };
+		F58DB7B71CA2D93600493D51 /* UIImage+WMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WMExtension.h"; sourceTree = "<group>"; };
+		F58DB7B81CA2D93600493D51 /* UIImage+WMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WMExtension.m"; sourceTree = "<group>"; };
+		F58DB7BA1CA2DA7D00493D51 /* WMConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMConst.h; sourceTree = "<group>"; };
+		F58DB7BB1CA2DA7D00493D51 /* WMConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMConst.m; sourceTree = "<group>"; };
+		F58DB7BD1CA2E87D00493D51 /* WMRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRecommendTagCell.h; sourceTree = "<group>"; };
+		F58DB7BE1CA2E87D00493D51 /* WMRecommendTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRecommendTagCell.m; sourceTree = "<group>"; };
+		F58DB7BF1CA2E87D00493D51 /* WMRecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMRecommendTagCell.xib; sourceTree = "<group>"; };
+		F58DB7C21CA2E93800493D51 /* WMRecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRecommendTag.h; sourceTree = "<group>"; };
+		F58DB7C31CA2E93800493D51 /* WMRecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRecommendTag.m; sourceTree = "<group>"; };
+		F58DB7C51CA2EB1500493D51 /* WMRecommendTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMRecommendTagViewController.h; sourceTree = "<group>"; };
+		F58DB7C61CA2EB1500493D51 /* WMRecommendTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMRecommendTagViewController.m; sourceTree = "<group>"; };
 		F5A494E61CA0F8880064BACF /* WMTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTopicVoiceView.h; sourceTree = "<group>"; };
 		F5A494E71CA0F8880064BACF /* WMTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMTopicVoiceView.m; sourceTree = "<group>"; };
 		F5A494EB1CA0FC4D0064BACF /* WMTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMTopicPictureView.h; sourceTree = "<group>"; };
@@ -373,6 +391,8 @@
 				F53B14211CA2344C00A6A2DD /* WMSeeBigViewController.h */,
 				F53B14221CA2344C00A6A2DD /* WMSeeBigViewController.m */,
 				F53B14231CA2344C00A6A2DD /* WMSeeBigViewController.xib */,
+				F58DB7C51CA2EB1500493D51 /* WMRecommendTagViewController.h */,
+				F58DB7C61CA2EB1500493D51 /* WMRecommendTagViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -386,6 +406,8 @@
 				F5B6045D1CA04CD50044994F /* WMUser.m */,
 				F5B6045F1CA04CE00044994F /* WMComment.h */,
 				F5B604601CA04CE00044994F /* WMComment.m */,
+				F58DB7C21CA2E93800493D51 /* WMRecommendTag.h */,
+				F58DB7C31CA2E93800493D51 /* WMRecommendTag.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -407,7 +429,9 @@
 				F5A494EE1CA0FC650064BACF /* WMTopicVideoView.h */,
 				F5A494EF1CA0FC650064BACF /* WMTopicVideoView.m */,
 				F5A494F31CA0FC8B0064BACF /* WMTopicVideoView.xib */,
-				F5847FE91C980728005D191F /* New */,
+				F58DB7BD1CA2E87D00493D51 /* WMRecommendTagCell.h */,
+				F58DB7BE1CA2E87D00493D51 /* WMRecommendTagCell.m */,
+				F58DB7BF1CA2E87D00493D51 /* WMRecommendTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -506,43 +530,10 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F5847FE91C980728005D191F /* New */ = {
-			isa = PBXGroup;
-			children = (
-				F5847FEA1C980728005D191F /* Controller */,
-				F5847FEB1C980728005D191F /* Model */,
-				F5847FEC1C980728005D191F /* View */,
-			);
-			name = New;
-			path = ../../New;
-			sourceTree = "<group>";
-		};
-		F5847FEA1C980728005D191F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F58480091C980795005D191F /* WMNewViewController.h */,
-				F584800A1C980795005D191F /* WMNewViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F5847FEB1C980728005D191F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F5847FEC1C980728005D191F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		F5847FED1C980728005D191F /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				F58DB6A81CA29C9F00493D51 /* Three */,
 				F5847FEE1C980728005D191F /* Category */,
 				F5847FF11C980728005D191F /* Controller */,
 				F5847FF61C980728005D191F /* main.m */,
@@ -550,6 +541,8 @@
 				F5847FF81C980728005D191F /* View */,
 				F56B23851C9E26F8003B0956 /* WMAFHTTPSessionManager.h */,
 				F56B23861C9E26F8003B0956 /* WMAFHTTPSessionManager.m */,
+				F58DB7BA1CA2DA7D00493D51 /* WMConst.h */,
+				F58DB7BB1CA2DA7D00493D51 /* WMConst.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -567,6 +560,10 @@
 				F56B239A1C9EC6AC003B0956 /* NSDate+WMExtension.m */,
 				F56B23961C9EC337003B0956 /* NSCalendar+WMExtension.h */,
 				F56B23971C9EC337003B0956 /* NSCalendar+WMExtension.m */,
+				F58DB7B71CA2D93600493D51 /* UIImage+WMExtension.h */,
+				F58DB7B81CA2D93600493D51 /* UIImage+WMExtension.m */,
+				F58DB7B41CA2D8E400493D51 /* UIImageView+WMExtension.h */,
+				F58DB7B51CA2D8E400493D51 /* UIImageView+WMExtension.m */,
 				F53B141E1CA19F2400A6A2DD /* WMExtension.h */,
 				F53B141F1CA19F2400A6A2DD /* WMExtension.m */,
 			);
@@ -599,6 +596,13 @@
 				F56B23831C9D9F1D003B0956 /* WMRefreshFooter.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F58DB6A81CA29C9F00493D51 /* Three */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Three;
 			sourceTree = "<group>";
 		};
 		F5C567221C97DF5300D76F32 = {
@@ -751,6 +755,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = F5C567221C97DF5300D76F32;
 			productRefGroup = F5C5672C1C97DF5300D76F32 /* Products */;
@@ -779,6 +784,7 @@
 				F53B14251CA2344C00A6A2DD /* WMSeeBigViewController.xib in Resources */,
 				F56B23921C9E4BB0003B0956 /* WMTopicCell.xib in Resources */,
 				F5A494F41CA0FC8B0064BACF /* WMTopicVideoView.xib in Resources */,
+				F58DB7C11CA2E87D00493D51 /* WMRecommendTagCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,19 +874,24 @@
 				F5A4C60B1C9A727600788411 /* WMMeSquare.m in Sources */,
 				F58480141C982262005D191F /* WMSettingViewController.m in Sources */,
 				F58237C51C996718008BBC63 /* WMTextField.m in Sources */,
+				F58DB7B91CA2D93600493D51 /* UIImage+WMExtension.m in Sources */,
 				F54DB89D1C9AAF0D00183488 /* WMWebViewController.m in Sources */,
 				F58480081C980787005D191F /* WMMeViewController.m in Sources */,
 				F56B23811C9D9EF3003B0956 /* WMRefreshHeader.m in Sources */,
 				F5A4C6141C9A9E3F00788411 /* WMMeSquareButton.m in Sources */,
 				F56B239B1C9EC6AC003B0956 /* NSDate+WMExtension.m in Sources */,
+				F58DB7BC1CA2DA7D00493D51 /* WMConst.m in Sources */,
 				F5A494FE1CA14EDA0064BACF /* WMVideoViewController.m in Sources */,
+				F58DB7C01CA2E87D00493D51 /* WMRecommendTagCell.m in Sources */,
 				F5847FFD1C980728005D191F /* WMTabBarController.m in Sources */,
 				F56B23871C9E26F8003B0956 /* WMAFHTTPSessionManager.m in Sources */,
+				F58DB7C41CA2E93800493D51 /* WMRecommendTag.m in Sources */,
 				F5B6045E1CA04CD50044994F /* WMUser.m in Sources */,
 				F5A4C60E1C9A72A100788411 /* WMMeCell.m in Sources */,
 				F5A494E81CA0F8880064BACF /* WMTopicVoiceView.m in Sources */,
 				F58DB6A31CA27FF900493D51 /* WMCommentCell.m in Sources */,
 				F58DB6A71CA281C400493D51 /* WMCommentSectionHeaderView.m in Sources */,
+				F58DB7C71CA2EB1500493D51 /* WMRecommendTagViewController.m in Sources */,
 				F5B144571C99401600019A73 /* WMThreeLogin.m in Sources */,
 				F56B23841C9D9F1D003B0956 /* WMRefreshFooter.m in Sources */,
 				F5A494F01CA0FC650064BACF /* WMTopicVideoView.m in Sources */,
@@ -896,6 +907,7 @@
 				F56B23901C9E2C6C003B0956 /* WMTopicCell.m in Sources */,
 				F53B14121CA1774300A6A2DD /* WMTopicViewController.m in Sources */,
 				F56B23981C9EC337003B0956 /* NSCalendar+WMExtension.m in Sources */,
+				F58DB7B61CA2D8E400493D51 /* UIImageView+WMExtension.m in Sources */,
 				F53B14201CA19F2400A6A2DD /* WMExtension.m in Sources */,
 				F53ACF571C9B9F61008507C5 /* NSString+WMExtence_FileSize.m in Sources */,
 				F5B144541C99396D00019A73 /* WMLoginRegister.m in Sources */,
@@ -1022,10 +1034,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/baisibudejie/Classes/Other/Three/UMSocial_Sdk_5.0/TencentOpenAPI",
+				);
 				GCC_PREFIX_HEADER = baisibudejie/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = baisibudejie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/baisibudejie/Classes/Other/Three/UMSocial_Sdk_5.0",
+					"$(PROJECT_DIR)/baisibudejie/Classes/Other/Three/UMSocial_Sdk_5.0/SinaSSO",
+					"$(PROJECT_DIR)/baisibudejie/Classes/Other/Three/UMSocial_Sdk_5.0/TencentOpenAPI",
+					"$(PROJECT_DIR)/baisibudejie/Classes/Other/Three/UMSocial_Sdk_5.0/Wechat",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hwm.baisibudejie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1037,10 +1060,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/baisibudejie/Classes/Other/Three/UMSocial_Sdk_5.0/TencentOpenAPI",
+				);
 				GCC_PREFIX_HEADER = baisibudejie/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = baisibudejie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/baisibudejie/Classes/Other/Three/UMSocial_Sdk_5.0",
+					"$(PROJECT_DIR)/baisibudejie/Classes/Other/Three/UMSocial_Sdk_5.0/SinaSSO",
+					"$(PROJECT_DIR)/baisibudejie/Classes/Other/Three/UMSocial_Sdk_5.0/TencentOpenAPI",
+					"$(PROJECT_DIR)/baisibudejie/Classes/Other/Three/UMSocial_Sdk_5.0/Wechat",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hwm.baisibudejie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

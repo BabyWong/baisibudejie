@@ -190,7 +190,6 @@ static NSString *topicID = @"topic";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     WMCommentViewController *commentController = [[WMCommentViewController alloc] init];
-    commentController.topic = self.topic;
     [self.navigationController pushViewController:commentController animated:YES];
 }
 

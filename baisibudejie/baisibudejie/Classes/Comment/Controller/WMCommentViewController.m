@@ -36,6 +36,7 @@
 
 static NSString * const WMSectionHeaderlId = @"header";
 static NSString * const WMCommentCellId = @"comment";
+static NSString * const WMTopicCellId = @"topic";
 
 #pragma mark - 懒加载
 - (WMAFHTTPSessionManager *)manager
@@ -61,14 +62,14 @@ static NSString * const WMCommentCellId = @"comment";
 - (void)setupTable {
     
     // 注册
-    [self.table_view registerNib:[UINib nibWithNibName:NSStringFromClass([WMCommentCell class]) bundle:nil] forCellReuseIdentifier:WMCommentCellId];
-    [self.table_view registerClass:[WMCommentSectionHeaderView class] forCellReuseIdentifier:WMSectionHeaderlId];
+    [self.table_view registerClass:[UITableViewCell class] forCellReuseIdentifier:WMTopicCellId];
+    [self.table_view registerClass:[UITableViewCell class] forCellReuseIdentifier:WMCommentCellId];
     
-    // 头部
-    UIView *headerView = [[UIView alloc] init];
-    headerView.backgroundColor = [UIColor redColor];
-    headerView.wm_height = 200;
-    self.table_view.tableHeaderView = headerView;
+//    // 头部
+//    UIView *headerView = [[UIView alloc] init];
+//    headerView.backgroundColor = [UIColor redColor];
+//    headerView.wm_height = 200;
+//    self.table_view.tableHeaderView = headerView;
     
     self.table_view.backgroundColor = WMCommonBgColor;
     self.table_view.separatorStyle = UITableViewCellSeparatorStyleNone;//去除下划线
@@ -93,14 +94,6 @@ static NSString * const WMCommentCellId = @"comment";
     
 }
 
-- (NSString *)aParam {
-    // 判断当前的控制器是不是新帖
-    if (self.parentViewController.class == [WMNewViewController class]) {
-        return @"newlist";
-    }
-    return @"list";
-}
-
 
 - (void)loadNewComments {
     
@@ -117,19 +110,20 @@ static NSString * const WMCommentCellId = @"comment";
     // 解强强
     __weak typeof(self) weakSelf = self;
     
-    [self.manager GET:CommenURL parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.manager GET:CommenURL parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
         // 没有任何评论数据
         if (![responseObject isKindOfClass:[NSDictionary class]]) {
             // 让[刷新控件]结束刷新
             [weakSelf.table_view.mj_header endRefreshing];
         }
         //        [responseObject writeToFile:@"/Users/hwm/Desktop/topic.plist" atomically:YES];
-
         
         // 字典数组 -> 模型数组
         weakSelf.lastestComments = [WMComment mj_objectArrayWithKeyValuesArray:responseObject[@"data"]];
         weakSelf.hotestComments = [WMComment mj_objectArrayWithKeyValuesArray:responseObject[@"hot"]];
-        
         
         // 刷新表格
         [self.table_view reloadData];
@@ -139,15 +133,12 @@ static NSString * const WMCommentCellId = @"comment";
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
-        
         WMLog(@"请求失败");
         
         // 让[刷新控件]结束刷新
         [self.table_view.mj_header endRefreshing];
         
-        
     }];
-    
     
 }
 
@@ -189,54 +180,83 @@ static NSString * const WMCommentCellId = @"comment";
 
 #pragma mark -- delegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // 有最热评论 + 最新评论数据
-    if (self.hotestComments.count) return 2;
+//    // 有最热评论 + 最新评论数据
+//    if (self.hotestComments.count) return 2;
+//    
+//    // 没有最热评论数据, 有最新评论数据
+//    if (self.lastestComments.count) return 1;
+//    
+//    // 没有最热评论数据, 没有最新评论数据
+//    return 0;
     
-    // 没有最热评论数据, 有最新评论数据
-    if (self.lastestComments.count) return 1;
-    
-    // 没有最热评论数据, 没有最新评论数据
-    return 0;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    // 第0组 && 有最热评论数据
-    if (section == 0 && self.hotestComments.count) {
-        return self.hotestComments.count;
-    }
+//    // 第0组 && 有最热评论数据
+//    if (section == 0 && self.hotestComments.count) {
+//        return self.hotestComments.count;
+//    }
+//    // 其他情况
+//    return self.lastestComments.count;
     
-    // 其他情况
-    return self.lastestComments.count;
+    if (section == 0) return 1;
+    if (section == 1) return 4;
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    WMCommentCell *cell = [tableView dequeueReusableCellWithIdentifier:WMCommentCellId];
+//    WMCommentCell *cell = [tableView dequeueReusableCellWithIdentifier:WMCommentCellId];
+//    
+//    if (indexPath.section == 0 && self.hotestComments.count) {
+//        cell.comment = self.hotestComments[indexPath.row];
+//    } else {
+//        cell.comment = self.lastestComments[indexPath.row];
+//    }
+//    
+//    return cell;
     
-    if (indexPath.section == 0 && self.hotestComments.count) {
-        cell.comment = self.hotestComments[indexPath.row];
+    if (indexPath.section == 0) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:WMTopicCellId];
+        cell.textLabel.text = @"最顶部的帖子数据";
+        return cell;
     } else {
-        cell.comment = self.lastestComments[indexPath.row];
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:WMCommentCellId];
+        cell.textLabel.text = [NSString stringWithFormat:@"评论数据 - %zd-%zd", indexPath.section, indexPath.row];
+        return cell;
     }
     
-    return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    
+    if (section == 0) return nil;
+    if (section == 1) return @"最热评论";
+    return @"最新评论";
     
 }
 
 #pragma mark - <UITableViewDelegate>
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+//{
+//    WMCommentSectionHeaderView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:WMSectionHeaderlId];
+//    
+//    // 第0组 && 有最热评论数据
+//    if (section == 0 && self.hotestComments.count) {
+//        header.textLabel.text = @"最热评论";
+//    } else { // 其他情况
+//        header.textLabel.text = @"最新评论";
+//    }
+//    
+//    return header;
+//}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    WMCommentSectionHeaderView *header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:WMSectionHeaderlId];
-    
-    // 第0组 && 有最热评论数据
-    if (section == 0 && self.hotestComments.count) {
-        header.textLabel.text = @"最热评论";
-    } else { // 其他情况
-        header.textLabel.text = @"最新评论";
-    }
-    
-    return header;
+    if (indexPath.section == 0) return 200;
+    return 44;
 }
 
 /**
@@ -245,12 +265,6 @@ static NSString * const WMCommentCellId = @"comment";
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
     [self.view endEditing:YES];
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
