@@ -17,6 +17,8 @@
 		F53B14121CA1774300A6A2DD /* WMTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53B14111CA1774300A6A2DD /* WMTopicViewController.m */; };
 		F53B141A1CA17DED00A6A2DD /* WMNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53B14161CA1789B00A6A2DD /* WMNewViewController.m */; };
 		F53B14201CA19F2400A6A2DD /* WMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F53B141F1CA19F2400A6A2DD /* WMExtension.m */; };
+		F53B14241CA2344C00A6A2DD /* WMSeeBigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53B14221CA2344C00A6A2DD /* WMSeeBigViewController.m */; };
+		F53B14251CA2344C00A6A2DD /* WMSeeBigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53B14231CA2344C00A6A2DD /* WMSeeBigViewController.xib */; };
 		F54DB89D1C9AAF0D00183488 /* WMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54DB89B1C9AAF0D00183488 /* WMWebViewController.m */; };
 		F54DB89E1C9AAF0D00183488 /* WMWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54DB89C1C9AAF0D00183488 /* WMWebViewController.xib */; };
 		F56B237E1C9D4798003B0956 /* WMTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = F56B237D1C9D4798003B0956 /* WMTopic.m */; };
@@ -103,6 +105,9 @@
 		F53B14161CA1789B00A6A2DD /* WMNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMNewViewController.m; sourceTree = "<group>"; };
 		F53B141E1CA19F2400A6A2DD /* WMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMExtension.h; sourceTree = "<group>"; };
 		F53B141F1CA19F2400A6A2DD /* WMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMExtension.m; sourceTree = "<group>"; };
+		F53B14211CA2344C00A6A2DD /* WMSeeBigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSeeBigViewController.h; sourceTree = "<group>"; };
+		F53B14221CA2344C00A6A2DD /* WMSeeBigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSeeBigViewController.m; sourceTree = "<group>"; };
+		F53B14231CA2344C00A6A2DD /* WMSeeBigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMSeeBigViewController.xib; sourceTree = "<group>"; };
 		F54DB89A1C9AAF0D00183488 /* WMWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMWebViewController.h; sourceTree = "<group>"; };
 		F54DB89B1C9AAF0D00183488 /* WMWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMWebViewController.m; sourceTree = "<group>"; };
 		F54DB89C1C9AAF0D00183488 /* WMWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WMWebViewController.xib; sourceTree = "<group>"; };
@@ -312,6 +317,9 @@
 				F5A494FC1CA14EDA0064BACF /* WMWordViewController.m */,
 				F53B14101CA1774300A6A2DD /* WMTopicViewController.h */,
 				F53B14111CA1774300A6A2DD /* WMTopicViewController.m */,
+				F53B14211CA2344C00A6A2DD /* WMSeeBigViewController.h */,
+				F53B14221CA2344C00A6A2DD /* WMSeeBigViewController.m */,
+				F53B14231CA2344C00A6A2DD /* WMSeeBigViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -713,6 +721,7 @@
 				F5A494F21CA0FC710064BACF /* WMTopicPictureView.xib in Resources */,
 				F5C5673B1C97DF5300D76F32 /* Assets.xcassets in Resources */,
 				F54DB89E1C9AAF0D00183488 /* WMWebViewController.xib in Resources */,
+				F53B14251CA2344C00A6A2DD /* WMSeeBigViewController.xib in Resources */,
 				F56B23921C9E4BB0003B0956 /* WMTopicCell.xib in Resources */,
 				F5A494F41CA0FC8B0064BACF /* WMTopicVideoView.xib in Resources */,
 			);
@@ -789,6 +798,7 @@
 			files = (
 				F53B141A1CA17DED00A6A2DD /* WMNewViewController.m in Sources */,
 				F53ACF651C9BF27D008507C5 /* WMAllViewController.m in Sources */,
+				F53B14241CA2344C00A6A2DD /* WMSeeBigViewController.m in Sources */,
 				F5A494FD1CA14EDA0064BACF /* WMPictureViewController.m in Sources */,
 				F58480111C98133E005D191F /* UIBarButtonItem+WMExtension.m in Sources */,
 				F5B144511C991C5500019A73 /* WMQuickLoginButton.m in Sources */,

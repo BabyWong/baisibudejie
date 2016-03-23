@@ -9,6 +9,7 @@
 #import "WMTopicPictureView.h"
 #import <DALabeledCircularProgressView.h>
 #import "WMTopic.h"
+#import "WMSeeBigViewController.h"
 
 @interface WMTopicPictureView   ()
 
@@ -29,6 +30,14 @@
     
     self.progressView.roundedCorners = 5;
     self.progressView.progressLabel.textColor = [UIColor whiteColor];
+    self.imageView.userInteractionEnabled = YES;
+    [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(seeBig)]];
+}
+
+- (void)seeBig {
+    WMSeeBigViewController *seeBigC = [[WMSeeBigViewController alloc] init];
+    seeBigC.topic = self.topic;
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:seeBigC animated:YES completion:nil];
 }
 
 - (void)setTopic:(WMTopic *)topic {

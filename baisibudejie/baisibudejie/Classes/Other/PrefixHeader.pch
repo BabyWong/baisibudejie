@@ -32,6 +32,7 @@
 //#import <SDImageCache.h>
 #import <UIImageView+WebCache.h>
 #import "WMTopicViewController.h"
+#import "WMTopic.h"
 
 #define WMLogFunc  WMLog(@"%s", __func__);
 
